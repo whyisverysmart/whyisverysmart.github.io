@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently an undergraduate student from School of Electronic Information and Electrical Engineering(SEIEE), Shanghai Jiao Tong University(SJTU), majoring in Computer Science and Technology, also double majoring in Mathematics and Applied Mathematics. Recently I've joined the LUMIA research group lead by Zhouhan Lin in SJTU. My interest mainly focuses on enhancing the efficiency of LLMs. You can find my CV here.
+I'm currently an undergraduate student from [School of Electronic Information and Electrical Engineering(SEIEE)](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University(SJTU)](https://www.sjtu.edu.cn/), majoring in Computer Science and Technology, also double majoring in Mathematics and Applied Mathematics. Recently I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by Zhouhan Lin in SJTU. My interest mainly focuses on enhancing the efficiency of LLMs. You can find my CV [here](../assets/CV.pdf).
 
 A data-driven personal website
 ======
