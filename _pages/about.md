@@ -11,7 +11,7 @@ I'm currently an undergraduate student from [School of Electronic Information an
 
 Education
 ======
-- Since Sep 2022: **B.S., Computer Science and Technology**, **B.S., Mathematics and Applied Mathematics(dual-degree)**, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University.
+- Since Sep 2022: **B.S., Computer Science and Technology**, **B.S., Mathematics and Applied Mathematics(dual-degree)**, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University
 
 Experiences
 ======
