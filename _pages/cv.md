@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-You can find my CY [here](https://whyisverysmart.github.io/assets/Huanyu%20Wang%20CV.pdf)
+You can find my CV [here](https://whyisverysmart.github.io/assets/Huanyu%20Wang%20CV.pdf)
