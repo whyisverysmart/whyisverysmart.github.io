@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently an undergraduate student from [School of Electronic Information and Electrical Engineering(SEIEE)](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University(SJTU)](https://www.sjtu.edu.cn/), majoring in Computer Science and Technology, also double majoring in Mathematics and Applied Mathematics. I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of MLLMs. You can find my CV [here](../assets/Huanyu Wang CV.pdf).
+I'm currently an undergraduate student from [School of Electronic Information and Electrical Engineering(SEIEE)](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University(SJTU)](https://www.sjtu.edu.cn/), majoring in <u>Computer Science and Technology</u>, also double majoring in <u>Mathematics and Applied Mathematics</u>. I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of MLLMs. You can find my CV [here](../assets/Huanyu Wang CV.pdf).
 
 Education
 ======
