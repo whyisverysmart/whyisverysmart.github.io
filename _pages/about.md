@@ -15,8 +15,8 @@ Education
 
 Experiences
 ======
-- Jul. 2024 - Sept. 2024: **Software Development Intern, Gauss Lab, Huawei**, Shanghai, China
-- Sept. 2023 - Nov. 2024: **President, Odyssey of the Mind(OM) school club**, SJTU
+- Jul. 2024 - Sept. 2024: Software Development Intern, Gauss Lab, Huawei, Shanghai, China
+- Sept. 2023 - Nov. 2024: President, Odyssey of the Mind(OM) school club, SJTU
 
 Honors and Awards
 ======
