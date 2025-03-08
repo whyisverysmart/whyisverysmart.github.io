@@ -5,36 +5,64 @@ permalink: /publications/
 author_profile: true
 ---
 
-1. **Fourier-LLaVA: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models**
-   *Huanyu Wang*, Jushi Kai, Haoli Bai, Bo Jiang, Zhouhan Lin
-   ICCV2025 (Submitted)
-
-<!-- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %} -->
-
-<!-- New style rendering if publication categories are defined -->
-<!-- {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %} -->
-
-
-
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+        .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+        .publication-item {
+            margin-bottom: 15px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .authors {
+            font-style: italic;
+            color: #666;
+        }
+        .venue {
+            color: #333;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Conference Papers</h3>
+    <ul class="publication-list">
+        <li class="publication-item">
+            <div class="title">Fourier-LLaVA: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models</div>
+            <div class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Bo Jiang, Zhouhan Lin</div>
+            <div class="venue"><i>ICCV</i>, 2025 (Submitted).</div>
+            <div class="links">
+                <a href="#" target="_blank">🔗 DOI</a>
+                <a href="#" target="_blank">📄 PDF</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
