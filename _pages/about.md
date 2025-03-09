@@ -9,16 +9,25 @@ redirect_from:
 
 I'm Huanyu Wang (王焕宇), an undergraduate student from [SEIEE](https://www.seiee.sjtu.edu.cn/), Shanghai Jiao Tong University ([SJTU](https://www.sjtu.edu.cn/)), majoring in <u>Computer Science and Technology (IEEE Honor Class)</u>, also double majoring in <u>Mathematics and Applied Mathematics</u>. I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by Prof. [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of VLMs.
 
-Education
-======
-- Sept. 2022 - Jun. 2026 (Expected): **B.S., Computer Science and Technology (IEEE Honor Class)**, **B.S., Mathematics and Applied Mathematics (dual-degree)**, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University
+---
 
-Experiences
+🎓 Education
 ======
-- Jul. 2024 - Sept. 2024: Software Development Intern, Gauss Lab, Huawei, Shanghai, China
-- Sept. 2023 - Nov. 2024: President, Odyssey of the Mind (OM) school club, SJTU
+- Shanghai Jiao Tong University
+  *B.S., Computer Science and Technology (IEEE Honor Class)*
+  *B.S., Mathematics and Applied Mathematics (dual-degree)*
+  🕒 Sept. 2022 - Jun. 2026 (Expected)
 
-Honors and Awards
+💼 Experiences
 ======
-- Undergraduate Excellence Scholarship 2022
-- Zhi Yuan Honors Scholarship 2023, 2024
+- Gauss Lab, Huawei
+  *Software Development Intern*
+  🕒 Jul. 2024 - Sept. 2024
+- Odyssey of the Mind (OM) school club, SJTU
+  *President*
+  🕒 Sept. 2023 - Nov. 2024
+
+🏆 Honors and Awards
+======
+- Undergraduate Excellence Scholarship (2022)
+- Zhi Yuan Honors Scholarship (2023, 2024)
