@@ -12,10 +12,16 @@ I'm Huanyu Wang (王焕宇), an undergraduate student from [SEIEE](https://www.s
 I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by Prof. [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of LVLMs.
 
 ## Education
-- **Shanghai Jiao Tong University**<br>
-  📅 *Sept. 2022 - Jun. 2026 (Expected)*<br>
-  - **B.S., Computer Science and Technology (IEEE Honor Class)**
-  - **B.S., Mathematics and Applied Mathematics (dual-degree)**
+
+<table>
+  <tr>
+    <td><strong>Shanghai Jiao Tong University</strong><br>
+        B.S. in Computer Science and Technology (IEEE Honor Class)<br>
+        B.S. in Mathematics and Applied Mathematics (Dual-degree)
+    </td>
+    <td align="right">Sept. 2022 – Jun. 2026 (Expected)</td>
+  </tr>
+</table>
 
 ## Experiences
 - **LUMIA Lab**, SJTU<br>
