@@ -13,13 +13,14 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 
 ## Education
 
-<table>
+<table style="width:100%; border-spacing: 0px;">
   <tr>
-    <td><strong>🎓 Shanghai Jiao Tong University</strong><br>
-        B.S. in Computer Science and Technology (IEEE Honor Class)<br>
-        B.S. in Mathematics and Applied Mathematics (Dual-degree)
+    <td style="font-size:16px; padding: 8px;">
+      <strong>🎓 <span style="font-size:18px;">Shanghai Jiao Tong University</span></strong><br>
+      <span style="font-size:14px;">B.S. in Computer Science and Technology (IEEE Honor Class)</span><br>
+      <span style="font-size:14px;">B.S. in Mathematics and Applied Mathematics (Dual-degree)</span>
     </td>
-    <td align="left">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
   </tr>
 </table>
 
