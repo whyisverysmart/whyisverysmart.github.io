@@ -32,7 +32,7 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
       <strong><span style="font-size:18px;">🔥 LUMIA Lab</span></strong>, SJTU<br>
       <strong><span style="font-size:14px;">Research Intern</span></strong><br>
       <span style="font-size:14px;">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a></span><br>
-      <span style="font-size:14px;">🧠 Efficient LVLMs</span>
+      <span style="font-size:14px;">Focus Area: Efficient LVLMs</span>
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
   </tr>
@@ -40,7 +40,7 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
     <td style="font-size:16px; padding: 8px;">
       <strong><span style="font-size:18px;">Gauss Lab</span></strong>, Huawei<br>
       <strong><span style="font-size:14px;">Software Development Intern</span></strong><br>
-      <span style="font-size:14px;">🔍 Gauss database kernel</span>
+      <span style="font-size:14px;">Focus Area: Gauss database kernel</span>
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
   </tr>
