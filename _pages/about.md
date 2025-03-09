@@ -7,15 +7,22 @@ redirect_from:
   - /about.html
 ---
 
-I'm Huanyu Wang (王焕宇), an undergraduate student from [SEIEE](https://www.seiee.sjtu.edu.cn/), Shanghai Jiao Tong University ([SJTU](https://www.sjtu.edu.cn/)), majoring in <u>Computer Science and Technology (IEEE Honor Class)</u>, also double majoring in <u>Mathematics and Applied Mathematics</u>. I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by Prof. [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of VLMs.
+I'm Huanyu Wang (王焕宇), an undergraduate student from [SEIEE](https://www.seiee.sjtu.edu.cn/), [SJTU](https://www.sjtu.edu.cn/), majoring in <u>Computer Science</u> and also double majoring in <u>Mathematics</u>.
+
+I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by Prof. [Zhouhan Lin](https://hantek.github.io/) in SJTU, currently focusing on pretraining and enhancing the efficiency of LVLMs.
 
 ## 🎓 Education
-- Shanghai Jiao Tong University<br>
-  *B.S., Computer Science and Technology (IEEE Honor Class)*<br>
-  *B.S., Mathematics and Applied Mathematics (dual-degree)*<br>
-  🕒 Sept. 2022 - Jun. 2026 (Expected)
+- **📍 Shanghai Jiao Tong University**<br>
+  🕒 *Sept. 2022 - Jun. 2026 (Expected)*<br>
+  - **B.S., Computer Science and Technology (IEEE Honor Class)**<br>
+  - **B.S., Mathematics and Applied Mathematics (dual-degree)**
+  
 
-### 💼 Experiences
+## 💼 Experiences
+- LUMIA Lab, SJTU<br>
+  *Research Intern*<br>
+  Advisor: Prof. [Zhouhan Lin](https://hantek.github.io/)<br>
+  🕒 Sept. 2024 - Present
 - Gauss Lab, Huawei<br>
   *Software Development Intern*<br>
   🕒 Jul. 2024 - Sept. 2024
