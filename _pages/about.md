@@ -15,11 +15,11 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 
 <table>
   <tr>
-    <td><strong>Shanghai Jiao Tong University</strong><br>
+    <td><strong>🎓 Shanghai Jiao Tong University</strong><br>
         B.S. in Computer Science and Technology (IEEE Honor Class)<br>
         B.S. in Mathematics and Applied Mathematics (Dual-degree)
     </td>
-    <td align="right">Sept. 2022 – Jun. 2026 (Expected)</td>
+    <td align="right">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
   </tr>
 </table>
 
@@ -36,6 +36,30 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 - **Odyssey of the Mind (OM) school club**, SJTU<br>
   📅 *Sept. 2023 - Nov. 2024*<br>
   - **President**
+
+<table>
+  <tr>
+    <td><strong>LUMIA Lab</strong>, SJTU<br>
+        Research Intern<br>
+        Advisor: Prof. [Zhouhan Lin](https://hantek.github.io/)<br>
+        🔍 Efficient LVLMs
+    </td>
+    <td align="right">📅 Sept. 2024 - Present</td>
+  </tr>
+  <tr>
+    <td><strong>Gauss Lab</strong>, Huawei<br>
+        Software Development Intern<br>
+        🔍 Gauss database kernel
+    </td>
+    <td align="right">📅 Jul. 2024 - Sept. 2024</td>
+  </tr>
+  <tr>
+    <td><strong>Odyssey of the Mind (OM) school club</strong>, SJTU<br>
+        President
+    </td>
+    <td align="right">📅 Sept. 2023 - Nov. 2024</td>
+  </tr>
+</table>
 
 ## Honors and Awards
 - Undergraduate Excellence Scholarship (2022)
