@@ -13,22 +13,23 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 
 ## 🎓 Education
 - **📍 Shanghai Jiao Tong University**<br>
-  🕒 *Sept. 2022 - Jun. 2026 (Expected)*<br>
-  - **B.S., Computer Science and Technology (IEEE Honor Class)**<br>
+  📅 *Sept. 2022 - Jun. 2026 (Expected)*<br>
+  - **B.S., Computer Science and Technology (IEEE Honor Class)**
   - **B.S., Mathematics and Applied Mathematics (dual-degree)**
-  
 
 ## 💼 Experiences
-- LUMIA Lab, SJTU<br>
-  *Research Intern*<br>
-  Advisor: Prof. [Zhouhan Lin](https://hantek.github.io/)<br>
-  🕒 Sept. 2024 - Present
-- Gauss Lab, Huawei<br>
-  *Software Development Intern*<br>
-  🕒 Jul. 2024 - Sept. 2024
-- Odyssey of the Mind (OM) school club, SJTU<br>
-  *President*<br>
-  🕒 Sept. 2023 - Nov. 2024
+- **LUMIA Lab**, SJTU<br>
+  📅 *Sept. 2024 - Present*<br>
+  - **Research Intern**
+  - Advisor: Prof. [Zhouhan Lin](https://hantek.github.io/)
+  - 🔍 Efficient LVLMs
+- **Gauss Lab**, Huawei<br>
+  📅 *Jul. 2024 - Sept. 2024*<br>
+  - **Software Development Intern**
+  - 🔍 Gauss database kernel
+- **Odyssey of the Mind (OM) school club**, SJTU<br>
+  📅 *Sept. 2023 - Nov. 2024*<br>
+  - **President**
 
 ## 🏆 Honors and Awards
 - Undergraduate Excellence Scholarship (2022)
