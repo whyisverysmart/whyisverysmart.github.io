@@ -13,10 +13,10 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 
 ## Education
 
-<table style="width:100%; border-spacing: 0px;">
+<table>
   <tr>
     <td style="font-size:16px; padding: 8px;">
-      <strong>🎓 <span style="font-size:18px;">Shanghai Jiao Tong University</span></strong><br>
+      <strong><span style="font-size:18px;">🎓 Shanghai Jiao Tong University</span></strong><br>
       <span style="font-size:14px;">B.S. in Computer Science and Technology (IEEE Honor Class)</span><br>
       <span style="font-size:14px;">B.S. in Mathematics and Applied Mathematics (Dual-degree)</span>
     </td>
@@ -28,25 +28,28 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 
 <table>
   <tr>
-    <td><strong>LUMIA Lab</strong>, SJTU<br>
-        Research Intern<br>
-        Advisor: Prof. [Zhouhan Lin](https://hantek.github.io/)<br>
-        🔍 Efficient LVLMs
+    <td style="font-size:16px; padding: 8px;">
+      <strong><span style="font-size:18px;">LUMIA Lab</span></strong>, SJTU<br>
+      <span style="font-size:14px;">Research Intern</span><br>
+      <span style="font-size:14px;">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a></span><br>
+      <span style="font-size:14px;">🔍 Efficient LVLMs</span>
     </td>
-    <td align="left">📅 Sept. 2024 - Present</td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
   </tr>
   <tr>
-    <td><strong>Gauss Lab</strong>, Huawei<br>
-        Software Development Intern<br>
-        🔍 Gauss database kernel
+    <td style="font-size:16px; padding: 8px;">
+      <strong><span style="font-size:18px;">Gauss Lab</span></strong>, Huawei<br>
+      <span style="font-size:14px;">Software Development Intern</span><br>
+      <span style="font-size:14px;">🔍 Gauss database kernel</span>
     </td>
-    <td align="left">📅 Jul. 2024 - Sept. 2024</td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
   </tr>
   <tr>
-    <td><strong>Odyssey of the Mind (OM) school club</strong>, SJTU<br>
-        President
+    <td style="font-size:16px; padding: 8px;">
+      <strong><span style="font-size:18px;">Odyssey of the Mind (OM) school club</span></strong>, SJTU<br>
+      <span style="font-size:14px;">President</span>
     </td>
-    <td align="left">📅 Sept. 2023 - Nov. 2024</td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2023 - Nov. 2024</td>
   </tr>
 </table>
 
