@@ -55,7 +55,7 @@ author_profile: true
         background-color: #fffafa;
     }
     .lumia {
-        background-color: #fffae6;
+        background-color: #e6fffa;
     }
     .empty {}
     .hide {
@@ -285,14 +285,18 @@ author_profile: true
         
         let currentTime = getTimeInUTC8();
         let hours = currentTime.hour;
-        if (hours < 8) return;
         let minutes = currentTime.minute;
         let week = currentTime.weekday;
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
-        let target_row = rows[hours-8];
-        let columns = target_row.querySelectorAll('td');
-        let target_td = columns[week];
+        if (hours < 8) {
+            let marker = document.createElement("div");
+            marker.className = "current-time-marker";
+            marker.style.top = '0%';
+            rows[0].querySelectorAll('td')[week].appendChild(marker);
+            return;
+        }
+        let target_td = rows[hours-8].querySelectorAll('td')[week];
         let i = 1;
         for (; target_td.classList.contains('hide'); i++) {
             target_td = rows[hours-8-i].querySelectorAll('td')[week];
