@@ -175,16 +175,16 @@ author_profile: true
     function updateCurrentTimeLine() {
         let now = new Date();
         
-        const year = now.getFullYear();
-        const month = ('0' + (now.getMonth() + 1)).slice(-2);
-        const day = ('0' + now.getDate()).slice(-2);
-        const hours = ('0' + now.getHours()).slice(-2);
-        const minutes = ('0' + now.getMinutes()).slice(-2);
-        const seconds = ('0' + now.getSeconds()).slice(-2);
-        const formattedTime = year + month + day + hours + minutes + seconds;
+        let year = now.getFullYear();
+        let month = ('0' + (now.getMonth() + 1)).slice(-2);
+        let day = ('0' + now.getDate()).slice(-2);
+        let hours = ('0' + now.getHours()).slice(-2);
+        let minutes = ('0' + now.getMinutes()).slice(-2);
+        let seconds = ('0' + now.getSeconds()).slice(-2);
+        let formattedTime = year + month + day + hours + minutes + seconds;
         console.log(formattedTime);
         
-        let hours = now.getHours();
+        hours = now.getHours();
         let rows = document.querySelectorAll('.schedule-table tbody tr');
         
         rows.forEach(row => {
