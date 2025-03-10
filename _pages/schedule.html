@@ -52,7 +52,7 @@ author_profile: true
         width: 100%;
         height: 2px;
         background-color: red;
-        margin-top: 0px;
+        margin-top: 50%;
     }
 </style>
 
@@ -260,7 +260,7 @@ author_profile: true
                         let percentage = (minutes / 60) * 100;
                         let marker = document.createElement("div");
                         marker.className = "current-time-marker";
-                        marker.style.marginTop = `${percentage}%`;
+                        // marker.style.marginTop = `${percentage}%`;
                         console.log(`${percentage}%`);
                         column.appendChild(marker);
                         column.classList.add("current-time-data");
