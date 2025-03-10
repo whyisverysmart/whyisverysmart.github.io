@@ -87,8 +87,8 @@ author_profile: true
             </tr>
             <tr data-time="09">
                 <td class="time-col">09:00 - 10:00</td>
-                <td class="activity">Course A</td>
                 <td class="hide"></td>
+                <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
                 <td class="activity" rowspan="2">D</td>
                 <td class="activity">Course E</td>
@@ -99,8 +99,8 @@ author_profile: true
                 <td class="time-col">10:00 - 11:00</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
+                <td class="activity">Course C</td>
                 <td class="hide"></td>
-                <td class="activity">Course D</td>
                 <td class="activity">Course E</td>
                 <td class="activity">Course D</td>
                 <td class="activity">Course E</td>
@@ -131,9 +131,9 @@ author_profile: true
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
                 <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
                 <td class="hide"></td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="14">
                 <td class="time-col">14:00 - 15:00</td>
@@ -254,23 +254,42 @@ author_profile: true
         let week = now.getDay() === 0 ? 7 : now.getDay();
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
+        row = rows[hours-8+1];
+        let columns = row.querySelectorAll('td');
+        target_td = columns[week+1];
+        if (target_td.classList.contains('hide')) {
+            target_td = rows[hours-8][week+1];
+            let percentage = (minutes / 60) * 100 * 2;
+        } else {
+            let percentage = (minutes / 60) * 100;
+        }
+        let marker = document.createElement("div");
+        marker.className = "current-time-marker";
+        marker.style.top = `${percentage}%`;
+        target_td.appendChild(marker);
+        target_td.classList.add("current-time-data");
 
-        rows.forEach(row => {
-            let rowTime = row.getAttribute("data-time");
-            if (rowTime === hours) {
-                let columns = row.querySelectorAll('td');
-                columns.forEach((column, index) => {
-                    if (index === week) {
-                        let percentage = (minutes / 60) * 100;
-                        let marker = document.createElement("div");
-                        marker.className = "current-time-marker";
-                        marker.style.top = `${percentage}%`;
-                        column.appendChild(marker);
-                        column.classList.add("current-time-data");
-                    }
-                });
-            }
-        });
+        // rows.forEach((row, rindex) => {
+        //     let rowTime = row.getAttribute("data-time");
+        //     if (rowTime === hours) {
+        //         let columns = row.querySelectorAll('td');
+        //         columns.forEach((column, cindex) => {
+        //             if (cindex === week) {
+        //                 if (column.classList.contains('hide')) {
+        //                     column = rows[rindex][cindex-1];
+        //                     let percentage = (minutes / 60) * 100 * 2;
+        //                 } else {
+        //                     let percentage = (minutes / 60) * 100;
+        //                 }
+        //                 let marker = document.createElement("div");
+        //                 marker.className = "current-time-marker";
+        //                 marker.style.top = `${percentage}%`;
+        //                 column.appendChild(marker);
+        //                 column.classList.add("current-time-data");
+        //             }
+        //         });
+        //     }
+        // });
     }
     updateCurrentTimeLine();
     setInterval(updateCurrentTimeLine, 60000);
