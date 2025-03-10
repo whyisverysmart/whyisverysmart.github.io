@@ -275,11 +275,11 @@ author_profile: true
         let week = currentTime.weekday;
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
-        let target_row = rows[hours-8+1];
+        let target_row = rows[hours-8];
         let columns = target_row.querySelectorAll('td');
         let target_td = columns[week];
         for (i = 1; target_td.classList.contains('hide'); i++) {
-            target_id = rows[hours-8+1-i].querySelectorAll('td')[week];
+            target_id = rows[hours-8-i].querySelectorAll('td')[week];
         }
         let percentage;
         if (target_td.rowspan > 1) {
