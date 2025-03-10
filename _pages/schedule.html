@@ -33,6 +33,11 @@ author_profile: true
     .activity {
         color: #333;
     }
+    .current-time-row {
+        background: rgba(255, 0, 0, 0.1); /* 轻微红色背景 */
+        border-top: 2px solid red; /* 顶部红色横线 */
+        font-weight: bold;
+    }
 </style>
 
 <div style="text-align: center; margin: 20px auto;">
@@ -47,7 +52,7 @@ author_profile: true
             <th>Saturday</th>
             <th>Sunday</th>
         </tr>
-        <tr>
+        <tr data-time="8">
             <td class="time-col">08:00 - 10:00</td>
             <td class="activity">Study</td>
             <td class="activity">Research</td>
@@ -57,7 +62,7 @@ author_profile: true
             <td class="activity">Exercise</td>
             <td class="activity">Rest</td>
         </tr>
-        <tr>
+        <tr data-time="10">
             <td class="time-col">10:00 - 12:00</td>
             <td class="activity">Coding</td>
             <td class="activity">Study</td>
@@ -67,7 +72,7 @@ author_profile: true
             <td class="activity">Exercise</td>
             <td class="activity">Rest</td>
         </tr>
-        <tr>
+        <tr data-time="14">
             <td class="time-col">14:00 - 16:00</td>
             <td class="activity">Research</td>
             <td class="activity">Coding</td>
@@ -77,7 +82,7 @@ author_profile: true
             <td class="activity">Personal Time</td>
             <td class="activity">Family Time</td>
         </tr>
-        <tr>
+        <tr data-time="16">
             <td class="time-col">16:00 - 18:00</td>
             <td class="activity">Seminar</td>
             <td class="activity">Study</td>
@@ -89,3 +94,29 @@ author_profile: true
         </tr>
     </table>
 </div>
+
+<script>
+    function updateCurrentTimeLine() {
+        let now = new Date();
+        let hours = now.getHours();
+        
+        // 找到所有时间段
+        let rows = document.querySelectorAll('.schedule-table tr[data-time]');
+        
+        rows.forEach(row => {
+            row.classList.remove("current-time-row"); // 先移除所有红线
+        });
+
+        // 找到当前时间所在的行
+        for (let i = 0; i < rows.length; i++) {
+            let rowTime = parseInt(rows[i].getAttribute("data-time"));
+            if (hours >= rowTime && (i === rows.length - 1 || hours < parseInt(rows[i + 1].getAttribute("data-time")))) {
+                rows[i].classList.add("current-time-row");
+                break;
+            }
+        }
+    }
+
+    updateCurrentTimeLine(); // 初次加载
+    setInterval(updateCurrentTimeLine, 60000); // 每分钟更新一次
+</script>
