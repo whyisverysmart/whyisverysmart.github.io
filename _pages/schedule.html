@@ -9,38 +9,44 @@ author_profile: true
     .schedule-table {
         width: 100%;
         table-layout: fixed;
-        margin: 20px auto;
+        margin: auto;
         border-collapse: collapse;
         font-family: Arial, sans-serif;
         font-size: 14px;
     }
     .schedule-table th {
         background-color: #f7f7f7;
-        padding: 12px 15px;
         border: 1px solid #ddd;
         text-align: center;
         font-weight: bold;
         color: #333;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     .schedule-table td {
-        padding: 12px 15px;
         border: 1px solid #ddd;
         text-align: center;
         color: #555;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
     }
     .time-col {
         background-color: #f1f1f1;
         color: #444;
         font-weight: bold;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
     }
     .activity {
         font-style: italic;
         color: #333;
     }
     .current-time-data {
-        border: 5px solid red;
+        border-left: 5px solid red;
         font-weight: bold;
-        color: #cc0000;
+        color: red;
         border-radius: 4px;
     }
 </style>
