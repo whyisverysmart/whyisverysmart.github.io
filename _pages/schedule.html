@@ -269,18 +269,18 @@ author_profile: true
         });
         
         let currentTime = getTimeInUTC8();
-        console.log(`当前时间（UTC+8）：星期${currentTime.weekday}, ${currentTime.hour}:${currentTime.minute}`);
-        let hours = now.getHours();
+        console.log(`${currentTime.weekday}, ${currentTime.hour}, ${currentTime.minute}`);
+        let hours = currentTime.hour;
         if (hours < 8) return;
-        let minutes = now.getMinutes();
-        let week = now.getDay() === 0 ? 7 : now.getDay();
+        let minutes = currentTime.minute;
+        let week = currentTime.weekday;
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
         let target_row = rows[hours-8+1];
         let columns = target_row.querySelectorAll('td');
-        let target_td = columns[week+1];
+        let target_td = columns[week];
         if (target_td.classList.contains('hide')) {
-            target_td = rows[hours-8][week+1];
+            target_td = rows[hours-8][week];
             let percentage = 50 + (minutes / 60) * 50;
         } else if (target_td.rowspan === 2) {
             let percentage = (minutes / 60) * 50;
