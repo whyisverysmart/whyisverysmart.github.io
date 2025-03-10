@@ -5,7 +5,7 @@ permalink: /schedule/
 author_profile: true
 ---
 
-<style>
+<!-- <style>
     .schedule-table {
         width: 100%;
         max-width: 900px;
@@ -119,4 +119,71 @@ author_profile: true
 
     updateCurrentTimeLine(); // 初次加载
     setInterval(updateCurrentTimeLine, 60000); // 每分钟更新一次
+</script> -->
+
+<style>
+  .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+      text-align: center;
+  }
+  .schedule-table th, .schedule-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+  }
+  .schedule-table th {
+      background-color: #f4f4f4;
+  }
+  .current-time-row {
+      border-left: 4px solid red !important;
+  }
+</style>
+
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign current_hour = "now" | date: "%H" | plus: 0 %}
+    {% assign schedule_times = "8,9,10,11,12,13,14,15,16,17" | split: "," %}
+
+    {% for time in schedule_times %}
+    <tr data-time="{{ time }}">
+      <td>{{ time }}:00 - {{ time | plus:1 }}:00</td>
+      <td>Course A</td>
+      <td>Course B</td>
+      <td>Course C</td>
+      <td>Course D</td>
+      <td>Course E</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+  function updateCurrentTimeLine() {
+      let now = new Date();
+      let hours = now.getHours();
+      let rows = document.querySelectorAll('.schedule-table tbody tr');
+
+      rows.forEach(row => {
+          let rowTime = parseInt(row.getAttribute("data-time"));
+          if (rowTime === hours) {
+              row.classList.add("current-time-row");
+          } else {
+              row.classList.remove("current-time-row");
+          }
+      });
+  }
+
+  updateCurrentTimeLine();
+  setInterval(updateCurrentTimeLine, 60000); // 每分钟刷新一次
 </script>
