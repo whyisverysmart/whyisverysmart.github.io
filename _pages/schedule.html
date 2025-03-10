@@ -49,7 +49,6 @@ author_profile: true
     }
     .current-time-data {
         font-weight: bold;
-        position: relative;
         z-index: 2;
     }
     .current-time-marker {
@@ -59,7 +58,7 @@ author_profile: true
         width: 100%;
         height: 2px;
         background-color: red;
-        z-index: 1;
+        z-index: 0;
     }
 </style>
 
@@ -287,7 +286,6 @@ author_profile: true
         }
         let rowspan = parseInt(target_td.getAttribute('rowspan'), 10) || 1;
         let percentage = ((i - 1 + (minutes / 60)) / rowspan) * 100;
-        console.log(`${i}, ${percentage}%`);
         let marker = document.createElement("div");
         marker.className = "current-time-marker";
         marker.style.top = `${percentage}%`;
