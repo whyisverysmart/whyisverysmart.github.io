@@ -269,7 +269,6 @@ author_profile: true
         });
         
         let currentTime = getTimeInUTC8();
-        console.log(`${currentTime.weekday}, ${currentTime.hour}, ${currentTime.minute}`);
         let hours = currentTime.hour;
         if (hours < 8) return;
         let minutes = currentTime.minute;
@@ -279,11 +278,14 @@ author_profile: true
         let target_row = rows[hours-8+1];
         let columns = target_row.querySelectorAll('td');
         let target_td = columns[week];
-        if (target_td.classList.contains('hide')) {
-            target_td = rows[hours-8][week];
-            let percentage = 50 + (minutes / 60) * 50;
-        } else if (target_td.rowspan === 2) {
-            let percentage = (minutes / 60) * 50;
+        for (i = 1; target_td.classList.contains('hide'); i++) {
+            target_id = rows[hours-8+1-i].querySelectorAll('td')[week];
+        }
+        let percentage;
+        if (target_td.rowspan > 1) {
+            percentage = ((target_td.rowspan - 1 + (minutes / 60)) / target_td.rowspan) * 100;
+        } else {
+            percentage = (minutes / 60) * 100;
         }
         let marker = document.createElement("div");
         marker.className = "current-time-marker";
