@@ -22,6 +22,7 @@ author_profile: true
         color: #333;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        word-break: break-all;
     }
     .schedule-table td {
         border: 1px solid #ddd;
@@ -31,6 +32,7 @@ author_profile: true
         overflow-wrap: break-word;
         word-break: break-all;
         position: relative;
+        z-index: 0;
     }
     .time-col {
         background-color: #f1f1f1;
@@ -49,6 +51,7 @@ author_profile: true
     }
     .current-time-data {
         font-weight: bold;
+        position: relative;
         z-index: 2;
     }
     .current-time-marker {
@@ -79,163 +82,163 @@ author_profile: true
         <tbody>
             <tr data-time="08">
                 <td class="time-col">08:00 - 09:00</td>
-                <td class="activity" rowspan="2">A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">CS3333-01</td>
+                <td class="activity" rowspan="2">CS3340-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="09">
                 <td class="time-col">09:00 - 10:00</td>
+                <td class="activity"></td>
                 <td class="hide"></td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity" rowspan="2">D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="10">
                 <td class="time-col">10:00 - 11:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="hide"></td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">CS3612-01</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">CS3321-01</td>
+                <td class="activity" rowspan="2">CS3333-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="11">
                 <td class="time-col">11:00 - 12:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="12">
                 <td class="time-col">12:00 - 13:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity" rowspan="2">E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="13">
                 <td class="time-col">13:00 - 14:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="hide"></td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="14">
                 <td class="time-col">14:00 - 15:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity" rowspan="2">CS3321-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">CS3612-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="15">
                 <td class="time-col">15:00 - 16:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="16">
                 <td class="time-col">16:00 - 17:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">MATH4704-01</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="2">MATH4704-01</td>
+                <td class="activity" rowspan="2">CS3340-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="17">
                 <td class="time-col">17:00 - 18:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="18">
                 <td class="time-col">18:00 - 19:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="3">MATH3611-01</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity" rowspan="3">MATH3605-02</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="19">
                 <td class="time-col">19:00 - 20:00</td>
-                <td class="activity" rowspan="4">A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="20">
                 <td class="time-col">20:00 - 21:00</td>
+                <td class="activity"></td>
                 <td class="hide"></td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="hide"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="21">
                 <td class="time-col">21:00 - 22:00</td>
-                <td class="hide"></td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="22">
                 <td class="time-col">22:00 - 23:00</td>
-                <td class="hide"></td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
             <tr data-time="23">
                 <td class="time-col">23:00 - 24:00</td>
-                <td class="activity">Course A</td>
-                <td class="activity">Course B</td>
-                <td class="activity">Course C</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
-                <td class="activity">Course D</td>
-                <td class="activity">Course E</td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
+                <td class="activity"></td>
             </tr>
         </tbody>
     </table>
