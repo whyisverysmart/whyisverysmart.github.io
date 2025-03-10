@@ -240,6 +240,26 @@ author_profile: true
 </div>
 
 <script>
+    function getTimeInUTC8() {
+        let now = new Date();
+        let options = {
+            timeZone: "Asia/Shanghai",
+            hour12: false,
+            weekday: "short",
+            hour: "2-digit",
+            minute: "2-digit"
+        };
+        let formatter = new Intl.DateTimeFormat("en-US", options);
+        let formattedParts = formatter.formatToParts(now);
+        let time = {};
+        let weekdayMap = { "Mon": 1, "Tue": 2, "Wed": 3, "Thu": 4, "Fri": 5, "Sat": 6, "Sun": 7 };
+        formattedParts.forEach(part => {
+            if (part.type === "hour") time.hour = parseInt(part.value);
+            if (part.type === "minute") time.minute = parseInt(part.value);
+            if (part.type === "weekday") time.weekday = weekdayMap[part.value];
+        });
+        return time;
+    }
     function updateCurrentTimeLine() {
         document.querySelectorAll(".current-time-marker").forEach(marker => {
             marker.remove();
@@ -248,7 +268,8 @@ author_profile: true
             element.classList.remove("current-time-data");
         });
         
-        let now = new Date();
+        let currentTime = getTimeInUTC8();
+        console.log(`当前时间（UTC+8）：星期${currentTime.weekday}, ${currentTime.hour}:${currentTime.minute}`);
         let hours = now.getHours();
         if (hours < 8) return;
         let minutes = now.getMinutes();
@@ -261,7 +282,7 @@ author_profile: true
         if (target_td.classList.contains('hide')) {
             target_td = rows[hours-8][week+1];
             let percentage = 50 + (minutes / 60) * 50;
-        } elif (target_td.rowspan === 2) {
+        } else if (target_td.rowspan === 2) {
             let percentage = (minutes / 60) * 50;
         }
         let marker = document.createElement("div");
