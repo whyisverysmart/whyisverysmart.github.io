@@ -288,6 +288,7 @@ author_profile: true
         } else {
             percentage = (minutes / 60) * 100;
         }
+        console.log(`${i}, ${percentage}%`);
         let marker = document.createElement("div");
         marker.className = "current-time-marker";
         marker.style.top = `${percentage}%`;
