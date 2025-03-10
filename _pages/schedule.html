@@ -278,12 +278,13 @@ author_profile: true
         let target_row = rows[hours-8];
         let columns = target_row.querySelectorAll('td');
         let target_td = columns[week];
-        for (i = 1; target_td.classList.contains('hide'); i++) {
+        let percentage;
+        let i = 1
+        for (; target_td.classList.contains('hide'); i++) {
             target_td = rows[hours-8-i].querySelectorAll('td')[week];
         }
-        let percentage;
         if (target_td.rowspan > 1) {
-            percentage = ((target_td.rowspan - 1 + (minutes / 60)) / target_td.rowspan) * 100;
+            percentage = ((i - 1 + (minutes / 60)) / target_td.rowspan) * 100;
         } else {
             percentage = (minutes / 60) * 100;
         }
