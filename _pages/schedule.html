@@ -190,29 +190,19 @@ author_profile: true
 <script>
     function updateCurrentTimeLine() {
         let now = new Date();
-        
-        // let year = now.getFullYear();
-        // let month = ('0' + (now.getMonth() + 1)).slice(-2);
-        // let day = ('0' + now.getDate()).slice(-2);
-        // let hours = ('0' + now.getHours()).slice(-2);
-        // let minutes = ('0' + now.getMinutes()).slice(-2);
-        // let seconds = ('0' + now.getSeconds()).slice(-2);
-        // let formattedTime = year + month + day + hours + minutes + seconds;
-        // console.log(formattedTime);
-
-        let hours = ('0' + now.getHours()).slice(-2);
-        let week = now.getDay() + 1;
+        let hours = String(now.getHours()).padStart(2, '0');
+        let week = now.getDay() === 0 ? 7 : now.getDay();
         console.log(hours);
         console.log(week);
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
         rows.forEach(row => {
             let rowTime = row.getAttribute("data-time");
-            if (rowTime == hours) {
+            if (rowTime === hours) {
                 let columns = row.querySelectorAll('td');
                 columns.forEach((column, index) => {
-                    if (index == 0) return;
-                    if (index == week) {
+                    if (index === 0) return;
+                    if (index === week) {
                         column.classList.add("current-time-data");
                     } else {
                         column.classList.remove("current-time-data");
@@ -225,8 +215,7 @@ author_profile: true
                 });
             }
         });
-  }
-
-  updateCurrentTimeLine();
-  setInterval(updateCurrentTimeLine, 60000); // 每分钟刷新一次
+    }
+    updateCurrentTimeLine();
+    setInterval(updateCurrentTimeLine, 60000);
 </script>
