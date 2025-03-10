@@ -16,7 +16,7 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 <table>
   <tr>
     <td style="font-size:16px; padding: 8px;">
-      <strong>🎓 <span style="font-size:18px;">Shanghai Jiao Tong University</span></strong><br>
+      <strong><span style="font-size:18px;">🎓 Shanghai Jiao Tong University</span></strong><br>
       <span style="font-size:14px;">B.S. in Computer Science and Technology (IEEE Honor Class)</span><br>
       <span style="font-size:14px;">B.S. in Mathematics and Applied Mathematics (Dual-degree)</span>
     </td>
