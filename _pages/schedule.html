@@ -279,7 +279,7 @@ author_profile: true
         let columns = target_row.querySelectorAll('td');
         let target_td = columns[week];
         for (i = 1; target_td.classList.contains('hide'); i++) {
-            target_id = rows[hours-8-i].querySelectorAll('td')[week];
+            target_td = rows[hours-8-i].querySelectorAll('td')[week];
         }
         let percentage;
         if (target_td.rowspan > 1) {
