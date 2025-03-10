@@ -278,16 +278,12 @@ author_profile: true
         let target_row = rows[hours-8];
         let columns = target_row.querySelectorAll('td');
         let target_td = columns[week];
-        let percentage;
         let i = 1;
         for (; target_td.classList.contains('hide'); i++) {
             target_td = rows[hours-8-i].querySelectorAll('td')[week];
         }
-        if (target_td.rowspan > 1) {
-            percentage = ((i - 1 + (minutes / 60)) / target_td.rowspan) * 100;
-        } else {
-            percentage = (minutes / 60) * 100;
-        }
+        let rowspan = parseInt(target_td.getAttribute('rowspan'), 10) || 1;
+        let percentage = ((i - 1 + (minutes / 60)) / rowspan) * 100;
         console.log(`${i}, ${percentage}%`);
         let marker = document.createElement("div");
         marker.className = "current-time-marker";
