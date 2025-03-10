@@ -55,55 +55,53 @@ author_profile: true
             </tr>
         </thead>
         <tbody>
-            {% assign current_hour = "now" | date: "%H" | plus: 0 %}
-
             <tr data-time="8">
                 <td class="time-col">08:00 - 08:45</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="9">
                 <td class="time-col">08:55 - 09:40</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="10">
                 <td class="time-col">10:00 - 10:45</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="11">
                 <td class="time-col">10:55 - 11:40</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="12">
                 <td class="time-col">12:00 - 12:45</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="13">
                 <td class="time-col">12:55 - 13:40</td>
                 <td class="activity">Course A</td>
                 <td class="activity">Course B</td>
                 <td class="activity">Course C</td>
-                <td>Course D</td>
-                <td>Course E</td>
+                <td class="activity">Course D</td>
+                <td class="activity">Course E</td>
             </tr>
             <tr data-time="14">
                 <td class="time-col">14:00 - 14:45</td>
@@ -175,18 +173,28 @@ author_profile: true
 
 <script>
     function updateCurrentTimeLine() {
-      let now = new Date();
-      let hours = now.getHours();
-      let rows = document.querySelectorAll('.schedule-table tbody tr');
-
-      rows.forEach(row => {
-          let rowTime = parseInt(row.getAttribute("data-time"));
-          if (rowTime === hours) {
-              row.classList.add("current-time-row");
-          } else {
-              row.classList.remove("current-time-row");
-          }
-      });
+        let now = new Date();
+        
+        const year = now.getFullYear();
+        const month = ('0' + (now.getMonth() + 1)).slice(-2);
+        const day = ('0' + now.getDate()).slice(-2);
+        const hours = ('0' + now.getHours()).slice(-2);
+        const minutes = ('0' + now.getMinutes()).slice(-2);
+        const seconds = ('0' + now.getSeconds()).slice(-2);
+        const formattedTime = year + month + day + hours + minutes + seconds;
+        console.log(formattedTime);
+        
+        let hours = now.getHours();
+        let rows = document.querySelectorAll('.schedule-table tbody tr');
+        
+        rows.forEach(row => {
+            let rowTime = parseInt(row.getAttribute("data-time"));
+            if (rowTime === hours) {
+                row.classList.add("current-time-row");
+            } else {
+                row.classList.remove("current-time-row");
+            }
+        });
   }
 
   updateCurrentTimeLine();
