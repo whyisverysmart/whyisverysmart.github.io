@@ -47,15 +47,12 @@ author_profile: true
     .current-time-data {
         font-weight: bold;
     }
-    #time-marker {
-        position: absolute;
+    .current-time-marker {
+        display: block;
         width: 100%;
         height: 2px;
         background-color: red;
-        top: 0;
-        left: 0;
-        display: none;
-        z-index: 10;
+        margin-top: 0px;
     }
 </style>
 
@@ -236,44 +233,37 @@ author_profile: true
             </tr>
         </tbody>
     </table>
-    <div id="time-marker"></div>
 </div>
 
 <script>
     function updateCurrentTimeLine() {
+        document.querySelectorAll(".current-time-marker").forEach(marker => {
+            marker.remove());
+        });
+        document.querySelectorAll(".current-time-data").forEach(element => {
+            element.classList.remove("current-time-data");
+        });
+        
         let now = new Date();
         let hours = String(now.getHours()).padStart(2, '0');
         let minutes = now.getMinutes();
         let week = now.getDay() === 0 ? 7 : now.getDay();
 
         let rows = document.querySelectorAll('.schedule-table tbody tr');
-        let marker = document.getElementById("time-marker");
 
         rows.forEach(row => {
             let rowTime = row.getAttribute("data-time");
             if (rowTime === hours) {
-                let percentage = minutes / 60;
-                let rowRect = row.getBoundingClientRect();
-                let tableRect = document.querySelector(".schedule-table").getBoundingClientRect();
                 let columns = row.querySelectorAll('td');
                 columns.forEach((column, index) => {
-                    if (index === 0) return;
                     if (index === week) {
-                        let columnRect = column.getBoundingClientRect();
-                        marker.style.top = `${rowRect.top - tableRect.top + (rowRect.height * percentage)}px`;
-                        marker.style.left = `${columnRect.left - tableRect.left}px`;
-                        marker.style.width = `${columnRect.width}px`;
-                        marker.style.display = "block";
-                        
+                        let percentage = (minutes / 60) * 100;
+                        let marker = document.createElement("div");
+                        marker.className = "current-time-marker";
+                        marker.style.marginTop = `${percentage}%`;
+                        column.appendChild(marker);
                         column.classList.add("current-time-data");
-                    } else {
-                        column.classList.remove("current-time-data");
                     }
-                });
-            } else {
-                let columns = row.querySelectorAll('td');
-                columns.forEach(column => {
-                    column.classList.remove("current-time-data");
                 });
             }
         });
