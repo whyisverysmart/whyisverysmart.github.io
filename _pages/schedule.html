@@ -12,35 +12,30 @@ author_profile: true
         margin: auto;
         border-collapse: collapse;
         background: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    .schedule-table th {
-        background: #0073e6;
-        color: white;
-        padding: 12px;
         border: 1px solid #ddd;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
     }
-    .schedule-table td {
-        padding: 12px;
+    .schedule-table th, .schedule-table td {
+        padding: 10px;
         border: 1px solid #ddd;
         text-align: center;
     }
-    .time-col {
-        background: #e6e6e6;
+    .schedule-table th {
+        background: #f5f5f5;
         font-weight: bold;
     }
-    .study { background: #ffeb99; }  /* 学习 */
-    .research { background: #d9b3ff; }  /* 研究 */
-    .coding { background: #b3e0ff; }  /* 编程 */
-    .exercise { background: #b3ffb3; }  /* 运动 */
-    .rest { background: #ff9999; }  /* 休息 */
-    .meeting { background: #ffcc99; }  /* 会议 */
+    .time-col {
+        background: #f0f0f0;
+        font-weight: bold;
+        width: 120px;
+    }
+    .activity {
+        color: #333;
+    }
 </style>
 
 <div style="text-align: center; margin: 20px auto;">
-    <h2>📅 Weekly Schedule</h2>
     <table class="schedule-table">
         <tr>
             <th>Time</th>
@@ -54,43 +49,43 @@ author_profile: true
         </tr>
         <tr>
             <td class="time-col">08:00 - 10:00</td>
-            <td class="study">📖 Study</td>
-            <td class="research">📝 Research</td>
-            <td class="study">📖 Study</td>
-            <td class="coding">💻 Coding</td>
-            <td class="research">📝 Research</td>
-            <td class="exercise">🏃‍♂️ Exercise</td>
-            <td class="rest">🛌 Rest</td>
+            <td class="activity">Study</td>
+            <td class="activity">Research</td>
+            <td class="activity">Study</td>
+            <td class="activity">Coding</td>
+            <td class="activity">Research</td>
+            <td class="activity">Exercise</td>
+            <td class="activity">Rest</td>
         </tr>
         <tr>
             <td class="time-col">10:00 - 12:00</td>
-            <td class="coding">💻 Coding</td>
-            <td class="study">📖 Study</td>
-            <td class="research">📝 Research</td>
-            <td class="study">📖 Study</td>
-            <td class="meeting">💼 Meeting</td>
-            <td class="exercise">🏃‍♂️ Exercise</td>
-            <td class="rest">🛌 Rest</td>
+            <td class="activity">Coding</td>
+            <td class="activity">Study</td>
+            <td class="activity">Research</td>
+            <td class="activity">Study</td>
+            <td class="activity">Meeting</td>
+            <td class="activity">Exercise</td>
+            <td class="activity">Rest</td>
         </tr>
         <tr>
             <td class="time-col">14:00 - 16:00</td>
-            <td class="research">📝 Research</td>
-            <td class="coding">💻 Coding</td>
-            <td class="study">📖 Study</td>
-            <td class="study">📖 Study</td>
-            <td class="meeting">💼 Meeting</td>
-            <td class="rest">🛒 Shopping</td>
-            <td class="exercise">🏡 Family Time</td>
+            <td class="activity">Research</td>
+            <td class="activity">Coding</td>
+            <td class="activity">Study</td>
+            <td class="activity">Study</td>
+            <td class="activity">Meeting</td>
+            <td class="activity">Personal Time</td>
+            <td class="activity">Family Time</td>
         </tr>
         <tr>
             <td class="time-col">16:00 - 18:00</td>
-            <td class="study">🎤 Seminar</td>
-            <td class="study">📖 Study</td>
-            <td class="coding">💻 Coding</td>
-            <td class="research">📝 Research</td>
-            <td class="study">📖 Study</td>
-            <td class="exercise">🏀 Sports</td>
-            <td class="rest">🎮 Gaming</td>
+            <td class="activity">Seminar</td>
+            <td class="activity">Study</td>
+            <td class="activity">Coding</td>
+            <td class="activity">Research</td>
+            <td class="activity">Study</td>
+            <td class="activity">Sports</td>
+            <td class="activity">Gaming</td>
         </tr>
     </table>
 </div>
