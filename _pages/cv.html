@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Curriculum Vitae"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,30 +8,57 @@ redirect_from:
 ---
 
 <style>
-  .pdf-container {
+.pdf-container {
     width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    display: flex; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+/*     height: 80vh; */
+/*     overflow: hidden;
+    justify-content: center;
+    border: 1px solid #ccc; */
+}
+.pdf-wrapper {
+    width: 100%;
+    height: 50vh; /* 控制 PDF 高度 */
+    border: 1px solid #ccc;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+    position: relative;
 }
-
 .pdf-frame {
     width: 100%;
     height: 100%;
     border: none;
 }
+.divider {
+    width: 80%;
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 10px 0;
+}
+.pdf-description {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
 
 </style>
 
 <div class="pdf-container">
-    <iframe src="https://whyisverysmart.github.io/assets/Huanyu_Wang_CV.pdf" class="pdf-frame"></iframe>
-</div>
+    <div class="pdf-description">Curriculum Vitae</div>
+    <div class="pdf-wrapper">
+        <iframe src="https://whyisverysmart.github.io/assets/Huanyu_Wang_CV.pdf" class="pdf-frame"></iframe>
+    </div>
 
-<h2>Transcript</h2>
+    <hr class="divider"> <!-- 分割线 -->
 
-<div class="pdf-container">
-    <iframe src="https://whyisverysmart.github.io/assets/Huanyu_Wang_Transcript.pdf" class="pdf-frame"></iframe>
+    <div class="pdf-description">Transcript</div>
+    <div class="pdf-wrapper">
+        <iframe src="https://whyisverysmart.github.io/assets/Huanyu_Wang_Transcript.pdf" class="pdf-frame"></iframe>
+    </div>
 </div>
