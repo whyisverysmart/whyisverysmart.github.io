@@ -27,15 +27,15 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
 ## Experiences
 
 <table>
-  <tr>
+<!--   <tr>
     <td style="font-size:16px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 InfiniAI Lab</span></strong>, CMU<br>
       <strong><span style="font-size:14px;">Research Intern</span></strong><br>
       <span style="font-size:14px;">Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a></span><br>
       <span style="font-size:14px;">Focus Area: MLsys</span>
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Mar. 2025 - Present (Expected)</td>
-  </tr>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
+  </tr> -->
   <tr>
     <td style="font-size:16px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 LUMIA Lab</span></strong>, SJTU<br>
@@ -43,7 +43,7 @@ I've joined the [LUMIA](https://github.com/LUMIA-Group) research group lead by P
       <span style="font-size:14px;">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a></span><br>
       <span style="font-size:14px;">Focus Area: Efficient LVLMs</span>
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present (Expected)</td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
   </tr>
   <tr>
     <td style="font-size:16px; padding: 8px;">
