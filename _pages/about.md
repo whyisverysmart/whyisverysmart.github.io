@@ -14,8 +14,9 @@ redirect_from:
           Interests: Japanese anime, Traveling, Cat!
         </p>
     </div>
-    <div class="profile-image" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+    <div class="profile-image" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
+        <figcaption style="margin-top: 8px; font-size: 12px; color: #666; text-align: center;">Mao-na (猫娜)</figcaption>
     </div>
 </div>
 
