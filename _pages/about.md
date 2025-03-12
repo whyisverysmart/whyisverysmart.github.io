@@ -23,10 +23,10 @@ redirect_from:
 
 <table>
   <tr>
-    <td style="font-size:16px; padding: 8px;">
+    <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">🎓 Shanghai Jiao Tong University</span></strong><br>
-      <span style="font-size:14px;">B.S. in Computer Science and Technology (IEEE Honor Class)</span><br>
-      <span style="font-size:14px;">B.S. in Mathematics and Applied Mathematics (Dual-degree)</span>
+      B.S. in Computer Science and Technology (IEEE Honor Class)<br>
+      B.S. in Mathematics and Applied Mathematics (Dual-degree)
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
   </tr>
@@ -36,40 +36,53 @@ redirect_from:
 
 <table>
 <!--   <tr>
-    <td style="font-size:16px; padding: 8px;">
+    <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 InfiniAI Lab</span></strong>, CMU<br>
-      <strong><span style="font-size:14px;">Research Intern</span></strong><br>
-      <span style="font-size:14px;">Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a></span><br>
-      <span style="font-size:14px;">Focus Area: MLsys</span>
+      <strong>Research Intern</strong><br>
+      Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a><br>
+      Focus Area: MLsys
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
   </tr> -->
   <tr>
-    <td style="font-size:16px; padding: 8px;">
+    <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 LUMIA Lab</span></strong>, SJTU<br>
-      <strong><span style="font-size:14px;">Research Intern</span></strong><br>
-      <span style="font-size:14px;">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a></span><br>
-      <span style="font-size:14px;">Focus Area: Efficient LVLMs</span>
+      <strong>Research Intern</strong><br>
+      Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a><br>
+      Focus Area: Efficient LVLMs
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
   </tr>
   <tr>
-    <td style="font-size:16px; padding: 8px;">
+    <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">Gauss Lab</span></strong>, Huawei<br>
-      <strong><span style="font-size:14px;">Software Development Intern</span></strong><br>
-      <span style="font-size:14px;">Focus Area: Gauss database kernel</span>
+      <strong>Software Development Intern</strong><br>
+      Focus Area: Gauss database kernel
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
   </tr>
   <tr>
-    <td style="font-size:16px; padding: 8px;">
+    <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">Odyssey of the Mind (OM) school club</span></strong>, SJTU<br>
-      <strong><span style="font-size:14px;">President</span></strong>
+      <strong>President</strong>
     </td>
     <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2023 - Nov. 2024</td>
   </tr>
 </table>
 
 ## Honors and Awards
-- Undergraduate Excellence Scholarship (2022)
-- Zhi Yuan Honors Scholarship (2023, 2024)
+
+<table>
+  <tr>
+    <td style="font-size:14px; padding: 8px;">
+      Zhi Yuan Honors Scholarship
+    </td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">2023, 2024</td>
+  </tr>
+  <tr>
+    <td style="font-size:14px; padding: 8px;">
+      Undergraduate Excellence Scholarship
+    </td>
+    <td style="text-align:left; font-size:14px; padding: 8px;">2022</td>
+  </tr>
+</table>
