@@ -10,12 +10,12 @@ redirect_from:
 <div class="profile-container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; margin: auto;">
     <div class="profile-text" style="flex: 3; font-size: 16px; line-height: 1.6;">
         <p>
-          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="[https://www.seiee.sjtu.edu.cn/](https://www.sjtu.edu.cn/)" target="_blank">SJTU</a>, majoring in <u>Computer Science</u> and also double majoring in <u>Mathematics</u>.<br />
+          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="https://www.sjtu.edu.cn/" target="_blank">SJTU</a>, majoring in <span style="text-decoration: underline;">Computer Science</span> and also double majoring in <span style="text-decoration: underline;">Mathematics</span>.<br />
           Interests: Japanese anime, Traveling, Cat!
         </p>
     </div>
     <div class="profile-image" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-        <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; max-height: 300px; border-radius: 10px; object-fit: contain;">
+        <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
     </div>
 </div>
 
