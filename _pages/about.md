@@ -15,7 +15,7 @@ redirect_from:
     </div>
     <div class="profile-image" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
-        <figcaption style="margin-top: 6px; font-size: 12px; color: #444; text-align: center;">Mao-na (猫娜)</figcaption>
+        <figcaption style="margin-top: 6px; font-size: 14px; color: #444; text-align: center;">Mao-na (猫娜)</figcaption>
     </div>
 </div>
 
