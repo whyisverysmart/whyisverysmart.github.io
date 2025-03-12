@@ -10,7 +10,7 @@ redirect_from:
 <div class="profile-container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; margin: auto;">
     <div class="profile-text" style="flex: 3; font-size: 16px; line-height: 1.6; color: #333;">
         <p>
-          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="https://www.sjtu.edu.cn/" target="_blank">SJTU</a>, majoring in <span style="text-decoration: underline;">Computer Science</span> and also double majoring in <span style="text-decoration: underline;">Mathematics</span>. I love basketball, Japanese anime, and traveling. And I have a lovely cat! -->
+          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="https://www.sjtu.edu.cn/" target="_blank">SJTU</a>, majoring in <span style="text-decoration: underline;">Computer Science</span> and also double majoring in <span style="text-decoration: underline;">Mathematics</span>. I love basketball, Japanese anime, and traveling. And I have a lovely cat!
         </p>
     </div>
     <div class="profile-image" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
