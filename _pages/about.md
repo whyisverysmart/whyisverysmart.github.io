@@ -28,7 +28,7 @@ redirect_from:
       B.S. in Computer Science and Technology (IEEE Honor Class)<br>
       B.S. in Mathematics and Applied Mathematics (Dual-degree)
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
+    <td style="font-size:14px; padding: 8px;">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
   </tr>
 </table>
 
@@ -42,7 +42,7 @@ redirect_from:
       Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a><br>
       Focus Area: MLsys
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
+    <td style="font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
   </tr> -->
   <tr>
     <td style="font-size:14px; padding: 8px;">
@@ -51,7 +51,7 @@ redirect_from:
       Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a><br>
       Focus Area: Efficient LVLMs
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
+    <td style="font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
   </tr>
   <tr>
     <td style="font-size:14px; padding: 8px;">
@@ -59,14 +59,14 @@ redirect_from:
       <strong>Software Development Intern</strong><br>
       Focus Area: Gauss database kernel
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
+    <td style="font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
   </tr>
   <tr>
     <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">Odyssey of the Mind (OM) school club</span></strong>, SJTU<br>
       <strong>President</strong>
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">📅 Sept. 2023 - Nov. 2024</td>
+    <td style="font-size:14px; padding: 8px;">📅 Sept. 2023 - Nov. 2024</td>
   </tr>
 </table>
 
@@ -77,12 +77,12 @@ redirect_from:
     <td style="font-size:14px; padding: 8px;">
       Zhi Yuan Honors Scholarship
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">2023, 2024</td>
+    <td style="font-size:14px; padding: 8px;">📅 2023, 2024</td>
   </tr>
   <tr>
     <td style="font-size:14px; padding: 8px;">
       Undergraduate Excellence Scholarship
     </td>
-    <td style="text-align:left; font-size:14px; padding: 8px;">2022</td>
+    <td style="font-size:14px; padding: 8px;">📅 2022</td>
   </tr>
 </table>
