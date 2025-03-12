@@ -7,44 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-<style>
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    margin: auto;
-}
-.profile-text {
-    flex: 2;
-    font-size: 16px;
-    line-height: 1.6;
-}
-.porfile-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.profile-image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    border-radius: 10px;
-    object-fit: contain;
-}
-</style>
-
-<div class="profile-container">
-    <div class="profile-text">
+<div class="profile-container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; margin: auto;">
+    <div class="profile-text" style="flex: 3; font-size: 16px; line-height: 1.6;">
         <p>
           I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="[https://www.seiee.sjtu.edu.cn/](https://www.sjtu.edu.cn/)" target="_blank">SJTU</a>, majoring in <u>Computer Science</u> and also double majoring in <u>Mathematics</u>.<br />
           Interests: Japanese anime, Traveling, Cat!
         </p>
     </div>
-    <div class="profile-image">
-        <img src="/images/cat.jpg" alt="Cat">
+    <div class="profile-image" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; max-height: 300px; border-radius: 10px; object-fit: contain;">
     </div>
 </div>
 
