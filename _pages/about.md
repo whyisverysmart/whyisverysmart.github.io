@@ -35,15 +35,15 @@ redirect_from:
 ## Experiences
 
 <table>
-<!--   <tr>
+  <tr>
     <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 InfiniAI Lab</span></strong>, CMU<br>
       <strong>Research Intern</strong><br>
       Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a><br>
-      Focus Area: MLsys
+      Focus Area: TBD
     </td>
     <td style="font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
-  </tr> -->
+  </tr>
   <tr>
     <td style="font-size:14px; padding: 8px;">
       <strong><span style="font-size:18px;">🔥 LUMIA Lab</span></strong>, SJTU<br>
