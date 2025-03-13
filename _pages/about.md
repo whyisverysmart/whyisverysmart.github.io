@@ -54,7 +54,7 @@ redirect_from:
     <td>
       <span style="font-size:18px; font-weight: bold;">🔥 <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank" class="no-style">InfiniAI Lab</a></span>, CMU<br>
       <span style="font-weight: bold;">Research Intern</span><br>
-      Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a><br>
+      Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="color: #499bed;">Beidi Chen</a><br>
       Focus Area: TBD
     </td>
     <td>📅 Mar. 2025 - Present</td>
@@ -63,7 +63,7 @@ redirect_from:
     <td>
       <span style="font-size:18px; font-weight: bold;">🔥 <a href="https://github.com/LUMIA-Group" target="_blank" class="no-style">LUMIA Lab</a></span>, SJTU<br>
       <span style="font-weight: bold;">Research Intern</span><br>
-      Advisor: Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a><br>
+      Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="color: #499bed;">Zhouhan Lin</a><br>
       Focus Area: Efficient LVLMs
     </td>
     <td>📅 Sept. 2024 - Present</td>
