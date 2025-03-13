@@ -14,7 +14,7 @@ redirect_from:
   }
   a.no-style:hover {
       text-decoration: underline;
-      color: #0073e6;
+      color: #0050a1;
   }
   td {
       font-size:14px;
