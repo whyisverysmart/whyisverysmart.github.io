@@ -7,13 +7,49 @@ redirect_from:
   - /about.html
 ---
 
-<div class="profile-container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; margin: auto;">
-    <div class="profile-text" style="flex: 3; font-size: 16px; line-height: 1.6; color: #333;">
+<style>
+  a.no-style {
+      text-decoration: none;
+      color: inherit;
+  }
+  a.no-style:hover {
+      text-decoration: underline;
+      color: #0073e6;
+  }
+  .profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+      margin: auto;"
+  }
+  .profile-text {
+      flex: 3;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+  }
+  .profile-image {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  td {
+      font-size:14px;
+      padding: 8px;
+  }
+</style>
+
+<div class="profile-container">
+    <div class="profile-text">
         <p>
-          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank">SEIEE</a>, <a href="https://www.sjtu.edu.cn/" target="_blank">SJTU</a>, majoring in <span style="text-decoration: underline;">Computer Science</span> and also double majoring in <span style="text-decoration: underline;">Mathematics</span>. I love basketball, Japanese anime, and traveling. And I have a lovely cat!
+          I'm Huanyu Wang (王焕宇), an undergraduate student from <a href="https://www.seiee.sjtu.edu.cn/" target="_blank" class="no-style">SEIEE</a>, <a href="https://www.sjtu.edu.cn/" target="_blank" class="no-style">SJTU</a>, majoring in <span style="text-decoration: underline;">Computer Science</span> and also double majoring in <span style="text-decoration: underline;">Mathematics</span>. I love basketball, Japanese anime, and traveling. And I have a lovely cat!
         </p>
     </div>
-    <div class="profile-image" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="profile-image">
         <img src="/images/cat.jpg" alt="Cat" style="max-width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
         <figcaption style="margin-top: 6px; font-size: 14px; color: #444; text-align: center;">Mao-na (猫娜)</figcaption>
     </div>
@@ -23,12 +59,12 @@ redirect_from:
 
 <table>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       <strong><span style="font-size:18px;">🎓 Shanghai Jiao Tong University</span></strong><br>
       B.S. in Computer Science and Technology (IEEE Honor Class)<br>
       B.S. in Mathematics and Applied Mathematics (Dual-degree)
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 Sept. 2022 – Jun. 2026 (Expected)</td>
+    <td>📅 Sept. 2022 – Jun. 2026 (Expected)</td>
   </tr>
 </table>
 
@@ -36,37 +72,37 @@ redirect_from:
 
 <table>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       <strong><span style="font-size:18px;">🔥 InfiniAI Lab</span></strong>, CMU<br>
       <strong>Research Intern</strong><br>
-      Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" style="text-decoration: none; color: #0073e6;">Beidi Chen</a><br>
+      Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" class="no-style">Beidi Chen</a><br>
       Focus Area: TBD
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 Mar. 2025 - Present</td>
+    <td>📅 Mar. 2025 - Present</td>
   </tr>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       <strong><span style="font-size:18px;">🔥 LUMIA Lab</span></strong>, SJTU<br>
       <strong>Research Intern</strong><br>
-      Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" style="text-decoration: none; color: #0073e6;">Zhouhan Lin</a><br>
+      Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" class="no-style">Zhouhan Lin</a><br>
       Focus Area: Efficient LVLMs
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 Sept. 2024 - Present</td>
+    <td>📅 Sept. 2024 - Present</td>
   </tr>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       <strong><span style="font-size:18px;">Gauss Lab</span></strong>, Huawei<br>
       <strong>Software Development Intern</strong><br>
       Focus Area: Gauss database kernel
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 Jul. 2024 - Sept. 2024</td>
+    <td>📅 Jul. 2024 - Sept. 2024</td>
   </tr>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       <strong><span style="font-size:18px;">Odyssey of the Mind (OM) school club</span></strong>, SJTU<br>
       <strong>President</strong>
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 Sept. 2023 - Nov. 2024</td>
+    <td>📅 Sept. 2023 - Nov. 2024</td>
   </tr>
 </table>
 
@@ -74,15 +110,15 @@ redirect_from:
 
 <table>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       Zhi Yuan Honors Scholarship
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 2023, 2024</td>
+    <td>📅 2023, 2024</td>
   </tr>
   <tr>
-    <td style="font-size:14px; padding: 8px;">
+    <td>
       Undergraduate Excellence Scholarship
     </td>
-    <td style="font-size:14px; padding: 8px;">📅 2022</td>
+    <td>📅 2022</td>
   </tr>
 </table>
