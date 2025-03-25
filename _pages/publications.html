@@ -14,6 +14,14 @@ author_profile: true
         margin: auto;
         padding: 20px;
     }
+    .publication-container {
+        width: 90%;
+        margin: auto;
+        font-family: "Arial", sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
     .publication-item {
         margin-bottom: 16px;
         padding-left: 10px;
@@ -42,6 +50,9 @@ author_profile: true
         text-decoration: underline;
     }
     @media (max-width: 600px) {
+      .publication-container {
+          width: 100%;
+      }
       .title {
           font-size: 17px;
       }
@@ -57,15 +68,17 @@ author_profile: true
   }
 </style>
 
-<ul class="publication-list">
-    <li class="publication-item">
-        <span class="title">Fourier-LLaVA: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models</span><br>
-        <span class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Bo Jiang, Zhouhan Lin</span><br>
-        <span class="venue"><i>ICCV 2025 </i>(Submitted)</span><br>
-        <span class="links">
-            <span>🔗 <a href="#" target="_blank">N/A</a></span>
-            <span>📄 <a href="#" target="_blank">N/A</a></span>
-        </span>
-    </li>
-</ul>
+<div class="publication-container">
+    <ul class="publication-list">
+        <li class="publication-item">
+            <span class="title">Fourier-LLaVA: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models</span><br>
+            <span class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Bo Jiang, Zhouhan Lin</span><br>
+            <span class="venue"><i>ICCV 2025 </i>(Submitted)</span><br>
+            <span class="links">
+                <span>🔗 <a href="#" target="_blank">N/A</a></span>
+                <span>📄 <a href="#" target="_blank">N/A</a></span>
+            </span>
+        </li>
+    </ul>
+</div>
 
