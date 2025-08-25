@@ -17,15 +17,49 @@ author_profile: true
     }
     .publication-list {
         list-style: none;
-        font-family: Arial, sans-serif;
+/*         font-family: Arial, sans-serif; */
         line-height: 1.6;
         margin: auto;
         padding: 20px;
     }
     .publication-item {
-        margin-bottom: 16px;
-        padding-left: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+/*         margin-bottom: 16px; */
+        margin-bottom: 24px;
+/*         padding-left: 10px; */
+        padding: 12px;
         border-left: 3px solid #0056b2;
+        border-radius: 6px;
+        background: #fff;
+    }
+    .pub-image {
+        flex: 0 0 20%;
+        max-width: 160px;
+    }
+    .pub-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        object-fit: contain;
+    }
+    .pub-details {
+        flex: 1;
+    }
+    .pdf-icon img {
+        width: 18px;
+        height: 18px;
+        margin-left: 6px;
+        vertical-align: middle;
+        opacity: 0.8;
+        transition: opacity 0.2s, transform 0.2s;
+    }
+    
+    .pdf-icon img:hover {
+        opacity: 1;
+        transform: scale(1.1);
     }
     .title {
         font-weight: bold;
@@ -71,22 +105,35 @@ author_profile: true
 <div class="publication-container">
     <ul class="publication-list">
         <li class="publication-item">
-            <span class="title">Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models</span><br>
-            <span class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
-            <span class="venue"><i>AAAI 2026 Conference Submission</i></span><br>
-            <span class="links">
-<!--                 <span>🔗 <a href="#" target="_blank">N/A</a></span> -->
-                <span>📄 <a href="https://arxiv.org/abs/2508.06038" target="_blank">2508.06038</a></span>
-            </span>
+            <div class="pub-image">
+              <img src="framework1.png" alt="Fourier-VLM Framework">
+            </div>
+            <div class="pub-details">
+                <span class="title">
+                    Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models
+                    <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="pdf-icon">
+                        <img src="pdf-icon.svg" alt="PDF">
+                    </a>
+                </span><br>
+                <span class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
+                <span class="venue"><i>AAAI 2026 Conference Submission</i></span><br>
+                <span class="links">
+                    <span>📄 <a href="https://arxiv.org/abs/2508.06038" target="_blank">2508.06038</a></span>
+                </span>
+            </div>
         </li>
         <li class="publication-item">
-            <span class="title">LoMo: Longer and More Videos Benchmark for Understanding and Temporal Grounding Tasks</span><br>
-            <span class="authors">Chengyang Hu, Xinyu Zhou, Huanyu Wang, Danyu Shen, Ran Yi, Mengtian Li, Lizhuang Ma</span><br>
-            <span class="venue"><i>NeurIPS 2025 Datasets and Benchmarks Track Submission</i></span><br>
-            <span class="links">
-<!--                 <span>🔗 <a href="#" target="_blank">N/A</a></span> -->
-                <span>📄 <a href="#" target="_blank">N/A</a></span>
-            </span>
+            <div class="pub-image">
+              <img src="framework1.png" alt="Fourier-VLM Framework">
+            </div>
+            <div class="pub-details">
+                <span class="title">LoMo: Longer and More Videos Benchmark for Understanding and Temporal Grounding Tasks</span><br>
+                <span class="authors">Chengyang Hu, Xinyu Zhou, Huanyu Wang, Danyu Shen, Ran Yi, Mengtian Li, Lizhuang Ma</span><br>
+                <span class="venue"><i>NeurIPS 2025 Datasets and Benchmarks Track Submission</i></span><br>
+                <span class="links">
+                    <span>📄 <a href="#" target="_blank">N/A</a></span>
+                </span>
+            </div>
         </li>
     </ul>
 </div>
