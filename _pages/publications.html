@@ -48,19 +48,22 @@ author_profile: true
     .arxiv-link {
         display: inline-flex;
         align-items: center;
-        text-decoration: none;
         margin-left: 6px;
     }
     .arxiv-link img {
-        width: 40px;
-        height: 20px;
+        width: 30px;
+        height: 15px;
         object-fit: contain;
         vertical-align: middle;
+        box-shadow: none !important;
+        filter: none !important;
+        outline: none !important;
         transition: transform 0.2s;
-        box-shadow: none;
     }
     .arxiv-link img:hover {
         transform: scale(1.2);
+        box-shadow: none !important;
+        filter: none !important;
     }
     .title {
         font-weight: bold;
@@ -79,27 +82,52 @@ author_profile: true
         font-size: 12px;
     }
     @media (max-width: 600px) {
-      .publication-container {
+        .pub-image {
+            display: none;
+        }
+        .arxiv-link {
+            margin-left: 3px;
+        }
+        .arxiv-link img {
+            width: 20px;
+            height: 10px;
+        }
+        .publication-container {
           width: 100%;
-      }
-      .title {
-          font-size: 17px;
-      }
-      .authors {
-          font-size: 13px;
-      }
-      .venue {
-          font-size: 13px;
-      }
-      .links a {
-          font-size: 13px;
-      }
-  }
+        }
+        .title {
+          font-size: 15px;
+        }
+        .authors {
+          font-size: 11px;
+        }
+        .venue {
+          font-size: 11px;
+        }
+        .links a {
+          font-size: 11px;
+        }
+    }
 </style>
 
 <div class="publication-container">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <ul class="publication-list">
+<!--         <li class="publication-item">
+            <div class="pub-image">
+              <img src="/images/Fourier-VLM.png" alt="Fourier-VLM Framework">
+            </div>
+            <div class="pub-details">
+                <span class="title">
+                    Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models
+                    <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="arxiv-link">
+                        <img src="/assets/arxiv_logo.svg" alt="arXiv">
+                    </a>
+                </span><br>
+                <span class="authors"><span class="me">Huanyu Wang</span>, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
+                <span class="venue"><i>AAAI 2026 Conference Submission</i></span><br>
+            </div>
+        </li> -->
         <li class="publication-item">
             <div class="pub-image">
               <img src="/images/Fourier-VLM.png" alt="Fourier-VLM Framework">
@@ -116,29 +144,14 @@ author_profile: true
             </div>
         </li>
         <li class="publication-item">
-            <div class="pub-image">
+<!--             <div class="pub-image">
               <img src="/images/Fourier-VLM.png" alt="Fourier-VLM Framework">
-            </div>
-            <div class="pub-details">
-                <span class="title">
-                    Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models
-                    <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="arxiv-link">
-                        <img src="/images/arxiv_logo.svg" alt="arXiv" width="20" height="20">
-                    </a>
-                </span><br>
-                <span class="authors"><span class="me">Huanyu Wang</span>, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
-                <span class="venue"><i>AAAI 2026 Conference Submission</i></span><br>
-            </div>
-        </li>
-        <li class="publication-item">
-            <div class="pub-image">
-              <img src="/images/Fourier-VLM.png" alt="Fourier-VLM Framework">
-            </div>
+            </div> -->
             <div class="pub-details">
                 <span class="title">
                     LoMo: Longer and More Videos Benchmark for Understanding and Temporal Grounding Tasks
                     <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="arxiv-link">
-                        <img src="assets/arxiv_logo.svg" alt="arXiv" width="20" height="20">
+                        <img src="/assets/arxiv_logo.svg" alt="arXiv">
                     </a>
                 </span><br>
                 <span class="authors">Chengyang Hu, Xinyu Zhou, <span class="me">Huanyu Wang</span>, Danyu Shen, Ran Yi, Mengtian Li, Lizhuang Ma</span><br>
