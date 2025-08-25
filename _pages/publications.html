@@ -19,7 +19,7 @@ author_profile: true
         list-style: none;
         line-height: 1.6;
         margin: auto;
-        padding: 20px;
+        padding: 16px;
     }
     .publication-item {
         display: flex;
@@ -30,7 +30,7 @@ author_profile: true
     }
     .pub-image {
         flex: 0 0 25%;
-        max-width: 160px;
+/*         max-width: 160px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,17 +46,14 @@ author_profile: true
         flex: 1;
         padding-left: 10px;
         border-left: 3px solid #0056b2;
-/*         border-radius: 6px; */
         background: #fff;
     }
-    .fa-file-pdf {
-        color: #d9534f;
-        margin-left: 6px;
-        font-size: 16px;
+    .arxiv-link img {
         vertical-align: middle;
+        margin-left: 6px;
         transition: transform 0.2s;
     }
-    .fa-file-pdf:hover {
+    .arxiv-link img:hover {
         transform: scale(1.2);
     }
     .title {
@@ -92,7 +89,6 @@ author_profile: true
 </style>
 
 <div class="publication-container">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <ul class="publication-list">
         <li class="publication-item">
             <div class="pub-image">
@@ -101,7 +97,9 @@ author_profile: true
             <div class="pub-details">
                 <span class="title">
                     Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models
-                    <a href="https://arxiv.org/abs/2508.06038" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+                    <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="arxiv-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/ArXiv_logo.svg" alt="arXiv" width="20" height="20">
+                    </a>
                 </span><br>
                 <span class="authors">Huanyu Wang, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
                 <span class="venue"><i>AAAI 2026 Conference Submission</i></span><br>
