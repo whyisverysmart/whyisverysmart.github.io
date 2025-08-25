@@ -45,10 +45,19 @@ author_profile: true
         border-left: 3px solid #0056b2;
         background: #fff;
     }
-    .arxiv-link img {
-        vertical-align: middle;
+    .arxiv-link {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
         margin-left: 6px;
+    }
+    .arxiv-link img {
+        width: 40px;
+        height: 20px;
+        object-fit: contain;
+        vertical-align: middle;
         transition: transform 0.2s;
+        box-shadow: none;
     }
     .arxiv-link img:hover {
         transform: scale(1.2);
@@ -99,7 +108,7 @@ author_profile: true
                 <span class="title">
                     Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models
                     <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="arxiv-link">
-                        <img src="/assets/arxiv_logo.svg" alt="arXiv" width="20" height="20">
+                        <img src="/assets/arxiv_logo.svg" alt="arXiv">
                     </a>
                 </span><br>
                 <span class="authors"><span class="me">Huanyu Wang</span>, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
