@@ -21,7 +21,7 @@ About Me
 
     
         
-            I&#39;m Huanyu Wang (王焕宇), an undergrad at Shanghai Jiao Tong University,
+            I&#39;m Huanyu Wang (王焕宇), a 4th year undergrad at Shanghai Jiao Tong University,
             pursuing dual degrees in Computer Science and Applied Mathematics.
         ">
 <meta name="keywords" content="personal,academic">
@@ -30,12 +30,12 @@ About Me
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="About MeI&#39;m Huanyu Wang (王焕宇), an undergrad at Shanghai Jiao Tong University,pursuing dual degrees in Computer Science and Applied Mathematics.">
+  <meta name="twitter:description" content="About MeI&#39;m Huanyu Wang (王焕宇), a 4th year undergrad at Shanghai Jiao Tong University,pursuing dual degrees in Computer Science and Applied Mathematics.">
 
 <meta property="og:url" content="https://whyisverysmart.github.io/about/">
   <meta property="og:site_name" content="Huanyu Wang">
   <meta property="og:title" content="About">
-  <meta property="og:description" content="About MeI&#39;m Huanyu Wang (王焕宇), an undergrad at Shanghai Jiao Tong University,pursuing dual degrees in Computer Science and Applied Mathematics.">
+  <meta property="og:description" content="About MeI&#39;m Huanyu Wang (王焕宇), a 4th year undergrad at Shanghai Jiao Tong University,pursuing dual degrees in Computer Science and Applied Mathematics.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
 
@@ -165,20 +165,24 @@ h2 {
     margin-top: 32px;
     margin-bottom: 16px;
     padding-left: 0;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: 600;
     border-left: 4px solid #0073e6;
     padding-left: 12px;
 }
 
 a {
-    color: inherit;
+    color: #0073e6;
+}
+
+.a-no-color {
+    color: inherit !important;
     text-decoration: none;
     transition: color 0.1s ease, text-decoration-color 0.1s ease;
 }
 
-a:hover {
-    color: #0073e6;
+.a-no-color:hover {
+    color: #0073e6 !important;
     text-decoration: underline;
     text-decoration-color: #0073e6;
 }
@@ -191,9 +195,9 @@ a:hover {
 }
 
 .profile-text {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.45;
 }
 
 .profile-image img {
@@ -203,10 +207,32 @@ a:hover {
 }
 
 .profile-image figcaption {
-    font-family: "Arial", sans-serif;
+    font-family: "Georgia", "Times New Roman", serif;
     font-size: 14px;
-    margin-top: 2px;
     text-align: center;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    display: flex;
+    margin-left: 32px;
+    font-size: 14px;
+}
+
+.news-date {
+    font-family: "Georgia", serif;
+    color: #0073e6;
+    letter-spacing: 0.4px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.news-text {
+    flex: 1;
 }
 
 .timeline {
@@ -248,16 +274,14 @@ a:hover {
 <div class="profile-grid">
     <div class="profile-text">
         <p>
-            I'm Huanyu Wang (王焕宇), an undergrad at Shanghai Jiao Tong University,
+            I'm Huanyu Wang (王焕宇), a 4th year undergrad at Shanghai Jiao Tong University,
             pursuing dual degrees in <strong>Computer Science</strong> and <strong>Applied Mathematics</strong>.
         </p>
-
         <p>
-            I currently conduct research under Prof. <a href="https://hantek.github.io/" target="_blank"><strong>Zhouhan Lin</strong></a> at SJTU,
-            and intern remotely at CMU, advised by Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank"><strong>Beidi Chen</strong></a>.
+            I currently conduct research under Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a> at SJTU,
+            and intern remotely at CMU, advised by Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a>.
             My research focuses on Vision-Language Models and Machine Learning Systems.
         </p>
-
         <p>
             Outside of academics, I enjoy basketball, Japanese anime, and traveling.
             And I also have a lovely cat!
@@ -269,6 +293,20 @@ a:hover {
         <figcaption>Mao-na (猫娜)</figcaption>
     </figure>
 </div>
+
+
+<h2>News</h2>
+
+<div class="news-list">
+    <div class="news-item">
+        <span class="news-date">2025.08</span>
+        <span class="news-text">
+            Preprint released on arXiv: <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="a-no-color">Fourier-VLM</a>, 
+            introducing frequency-domain token compression for VLMs.
+        </span>
+    </div>
+</div>
+
 
 
 <h2>Education</h2>
@@ -295,11 +333,11 @@ a:hover {
     <div class="timeline-item">
         <div class="timeline-left">
             <div class="timeline-title">
-                Research Intern, <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank">InfiniAI Lab</a>
+                Research Intern, <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank" class="a-no-color">InfiniAI Lab</a>
             </div>
             <div class="timeline-detail">Carnegie Mellon University</div>
             <div class="timeline-detail">
-                Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a>
+                Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" class="a-no-color">Beidi Chen</a>
             </div>
             <div class="timeline-detail">Focus: Machine Learning Systems</div>
         </div>
@@ -309,11 +347,11 @@ a:hover {
     <div class="timeline-item">
         <div class="timeline-left">
             <div class="timeline-title">
-                Research Intern, <a href="https://github.com/LUMIA-Group" target="_blank">LUMIA Lab</a>
+                Research Intern, <a href="https://github.com/LUMIA-Group" target="_blank" class="a-no-color">LUMIA Lab</a>
             </div>
             <div class="timeline-detail">Shanghai Jiao Tong University</div>
             <div class="timeline-detail">
-                Advisor: Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a>
+                Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" class="a-no-color">Zhouhan Lin</a>
             </div>
             <div class="timeline-detail">Focus: Efficient VLMs</div>
         </div>
