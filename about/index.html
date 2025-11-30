@@ -212,6 +212,15 @@ a {
     text-align: center;
 }
 
+.news-box {
+    border: 1px solid rgba(0,0,0,0.08);
+    background: snow;
+    padding: 20px;
+    margin-top: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
 .news-list {
     display: flex;
     flex-direction: column;
@@ -228,7 +237,8 @@ a {
     color: #0073e6;
     letter-spacing: 0.4px;
     width: 100px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .news-text {
@@ -274,13 +284,13 @@ a {
 <div class="profile-grid">
     <div class="profile-text">
         <p>
-            I'm Huanyu Wang (王焕宇), a 4th year undergrad at Shanghai Jiao Tong University,
-            pursuing dual degrees in <strong>Computer Science</strong> and <strong>Applied Mathematics</strong>.
+            I'm Huanyu Wang (王焕宇), a 4th year undergrad at <a href="https://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>,
+            pursuing dual degrees in Computer Science and Applied Mathematics.
         </p>
         <p>
             I currently conduct research under Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a> at SJTU,
-            and intern remotely at CMU, advised by Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a>.
-            My research focuses on Vision-Language Models and Machine Learning Systems.
+            and work remotely as a research intern at CMU with Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a>.
+            My research interests lie in Vision-Language Models and Machine Learning Systems.
         </p>
         <p>
             Outside of academics, I enjoy basketball, Japanese anime, and traveling.
@@ -295,15 +305,18 @@ a {
 </div>
 
 
-<h2>News</h2>
+<div class="news-box">
 
-<div class="news-list">
-    <div class="news-item">
-        <span class="news-date">2025.08</span>
-        <span class="news-text">
-            Preprint released on arXiv: <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="a-no-color">Fourier-VLM</a>, 
-            introducing frequency-domain token compression for VLMs.
-        </span>
+    <h2>News</h2>
+
+    <div class="news-list">
+        <div class="news-item">
+            <span class="news-date">2025.08</span>
+            <span class="news-text">
+                Preprint released on arXiv: <a href="https://arxiv.org/abs/2508.06038" target="_blank" class="a-no-color">Fourier-VLM</a>, 
+                introducing frequency-domain token compression for VLMs.
+            </span>
+        </div>
     </div>
 </div>
 
@@ -312,7 +325,6 @@ a {
 <h2>Education</h2>
 
 <div class="timeline">
-
     <div class="timeline-item">
         <div class="timeline-left">
             <div class="timeline-title">Shanghai Jiao Tong University</div>
@@ -321,7 +333,6 @@ a {
         </div>
         <div class="timeline-time">Sept. 2022 - Jun. 2026 (Expected)</div>
     </div>
-
 </div>
 
 
