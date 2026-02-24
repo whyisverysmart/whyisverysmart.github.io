@@ -202,8 +202,31 @@ a {
     line-height: 1.4;
 }
 
-.profile-image img {
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.profile-links a {
+    font-size: 22px;
+    color: #333;
+    transition: color 0.1s ease, transform 0.1s ease;
+}
+
+.profile-links a:hover {
+    color: #0073e6;
+    transform: translateY(-1px);
+}
+
+.profile-image {
+    justify-self: center;
+    max-width: 260px;
     width: 100%;
+}
+
+.profile-image img {
     border-radius: 8px;
     object-fit: cover;
 }
@@ -255,7 +278,7 @@ a {
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: start;
     padding-bottom: 12px;
     border-bottom: 1px solid #909090;
@@ -305,6 +328,40 @@ a {
     text-align: right;
 }
 
+@media (max-width: 768px) {
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .news-box {
+        padding: 12px;
+        margin-top: 8px;
+    }
+
+    .news-item {
+        margin-left: 12px;
+    }
+
+    .news-date {
+        width: 80px;
+    }
+
+    .timeline-item {
+        margin-left: 24px;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+}
+
 </style>
 
 
@@ -319,7 +376,7 @@ a {
             at the <a href="https://github.com/LUMIA-Group" target="_blank">LUMIA Lab</a>.
         </p>
         <p>
-            I am also an incoming Ph.D. student in ECE at Carnegie Mellon University,
+            I am also an incoming Ph.D. student at Carnegie Mellon University,
             advised by Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a> at the
             <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank">InfiniAI Lab</a>.
             My research focuses on High Performance Computing and Machine Learning Systems.
@@ -327,6 +384,20 @@ a {
         <p>
             Outside of academics, I enjoy basketball, Japanese anime, and traveling, and I also have a lovely cat!
         </p>
+        <div class="profile-links">
+            <a href="https://github.com/whyisverysmart" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=oMHVyeAAAAAJ" target="_blank" aria-label="Google Scholar">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/huanyu-wang-15852839b" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:whyisverysmart@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
     </div>
 
     <figure class="profile-image">

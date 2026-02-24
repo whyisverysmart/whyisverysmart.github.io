@@ -17,11 +17,9 @@
 
 
     Curriculum Vitae
-
     
         
     
-
 ">
 <meta name="keywords" content="personal,academic">
 
@@ -172,13 +170,10 @@
 .pdf-wrapper {
     width: 100%;
     max-width: 1000px;
-    /* min-width: 600px; */
     aspect-ratio: 210/297;
     overflow: hidden;
     position: relative;
-    /* border: 1px solid #ccc; */
     border-radius: 6px;
-    /* box-shadow: 0 6px 18px rgba(0,0,0,0.1); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,15 +185,23 @@
     border: none;
 }
 
+@media (max-width: 768px) {
+    .pdf-container {
+        gap: 16px;
+    }
+
+    .pdf-description {
+    font-size: 20px;
+}
+}
+
 </style>
 
 <div class="pdf-container">
     <div class="pdf-description">Curriculum Vitae</div>
-
     <div class="pdf-wrapper">
         <iframe src="/assets/Huanyu_Wang_CV.pdf#toolbar=0&view=FitV" class="pdf-frame"></iframe>
     </div>
-
 </div>
 
   </article>
