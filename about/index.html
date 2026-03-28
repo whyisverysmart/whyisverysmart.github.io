@@ -207,13 +207,12 @@ a {
     align-items: center;
 }
 
-.profile-links a {
+.profile-links .a-no-color {
     font-size: 22px;
-    color: #333;
     transition: color 0.1s ease, transform 0.1s ease;
 }
 
-.profile-links a:hover {
+.profile-links .a-no-color:hover {
     color: #0073e6;
     transform: translateY(-1px);
 }
@@ -235,9 +234,15 @@ a {
     text-align: center;
 }
 
+.colorscheme-light {
+  --custom-bg: snow;
+}
+.colorscheme-dark {
+  --custom-bg: #2d2d2d;
+}
 .news-box {
     border: 1px solid rgba(0,0,0,0.08);
-    background: snow;
+    background:  var(--custom-bg);
     padding: 16px;
     margin-top: 16px;
     border-radius: 8px;
@@ -392,16 +397,16 @@ a {
             Outside of academics, I enjoy basketball, Japanese anime, and traveling, and I also have a lovely cat!
         </p>
         <div class="profile-links">
-            <a href="https://github.com/whyisverysmart" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/whyisverysmart" target="_blank" class="a-no-color" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://scholar.google.com/citations?user=oMHVyeAAAAAJ" target="_blank" aria-label="Google Scholar">
+            <a href="https://scholar.google.com/citations?user=oMHVyeAAAAAJ" target="_blank" class="a-no-color" aria-label="Google Scholar">
                 <i class="fa-solid fa-graduation-cap"></i>
             </a>
-            <a href="https://www.linkedin.com/in/huanyu-wang-15852839b" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/huanyu-wang-15852839b" target="_blank" class="a-no-color" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="mailto:whyisverysmart@gmail.com" aria-label="Email">
+            <a href="mailto:whyisverysmart@gmail.com" class="a-no-color" aria-label="Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
@@ -481,13 +486,13 @@ a {
     <div class="timeline-item">
         <div class="timeline-left">
             <div class="timeline-icon">
-                <img src="/assets/CMU_logo.png" alt="CMU Logo">
+                <img src="/assets/InfiniAI_logo.png" alt="InfiniAI Logo">
             </div>
             <div class="timeline-content">
                 <div class="timeline-title">Research Intern, <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank" class="a-no-color">InfiniAI Lab</a></div>
                 <div class="timeline-detail">Carnegie Mellon University</div>
-                <div class="timeline-detail">Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a></div>
-                <div class="timeline-detail">Focus: Machine Learning Systems</div>
+                <div class="timeline-detail">Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" class="a-no-color">Beidi Chen</a></div>
+                <div class="timeline-detail">Focus: LLM Serving Systems</div>
             </div>
         </div>
         <div class="timeline-time">Mar. 2025 - Present</div>
@@ -496,12 +501,12 @@ a {
     <div class="timeline-item">
         <div class="timeline-left">
             <div class="timeline-icon">
-                <img src="/assets/SJTU_logo.png" alt="SJTU Logo">
+                <img src="/assets/LUMIA_logo.jpg" alt="LUMIA Logo">
             </div>
             <div class="timeline-content">
                 <div class="timeline-title">Research Intern, <a href="https://github.com/LUMIA-Group" target="_blank" class="a-no-color">LUMIA Lab</a></div>
                 <div class="timeline-detail">Shanghai Jiao Tong University</div>
-                <div class="timeline-detail">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a></div>
+                <div class="timeline-detail">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" class="a-no-color">Zhouhan Lin</a></div>
                 <div class="timeline-detail">Focus: Efficient VLMs</div>
             </div>
         </div>
