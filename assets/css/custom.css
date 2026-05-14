@@ -1,0 +1,366 @@
+/* All rules below are scoped under .hw-page so they only apply inside this
+   project's own content articles, never to theme-owned elements. The only
+   exceptions are the two colorscheme blocks: those classes live on <body>
+   and must stay at the top level so the CSS variables can cascade. */
+
+/* ===== Color-scheme variables (must stay at body level) ===== */
+.colorscheme-light {
+    --custom-bg: snow;
+    --custom-color: #666;
+}
+
+.colorscheme-dark {
+    --custom-bg: #2d2d2d;
+    --custom-color: #bbb;
+}
+
+/* ===== Typography ===== */
+.hw-page h2:first-of-type {
+    margin-top: 0 !important;
+}
+
+.hw-page h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    border-left: 4px solid #0073e6;
+    padding-left: 12px;
+}
+
+.hw-page a {
+    color: #0073e6;
+}
+
+.hw-page .a-no-color {
+    color: inherit !important;
+    text-decoration: none;
+    transition: color 0.1s ease, text-decoration-color 0.1s ease;
+}
+
+.hw-page .a-no-color:hover {
+    color: #0073e6 !important;
+    text-decoration: underline;
+    text-decoration-color: #0073e6;
+}
+
+/* ===== About: profile ===== */
+.hw-page .profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.hw-page .profile-text {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.hw-page .profile-text p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.hw-page .profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.hw-page .profile-links .a-no-color {
+    font-size: 22px;
+    transition: color 0.1s ease, transform 0.1s ease;
+}
+
+.hw-page .profile-links .a-no-color:hover {
+    color: #0073e6;
+    transform: translateY(-1px);
+}
+
+.hw-page .profile-image {
+    justify-self: center;
+    max-width: 280px;
+    width: 100%;
+}
+
+.hw-page .profile-image img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hw-page .profile-image figcaption {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===== About: news box ===== */
+.hw-page .news-box {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--custom-bg);
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.hw-page .news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hw-page .news-item {
+    display: flex;
+    margin-left: 32px;
+    font-size: 14px;
+}
+
+.hw-page .news-date {
+    font-family: "Georgia", serif;
+    color: #0073e6;
+    letter-spacing: 0.4px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hw-page .news-text {
+    flex: 1;
+}
+
+/* ===== About: timeline (education / experiences / honors) ===== */
+.hw-page .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hw-page .timeline-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #909090;
+    margin-left: 32px;
+}
+
+.hw-page .timeline-left {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.hw-page .timeline-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hw-page .timeline-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.hw-page .timeline-icon.no-logo {
+    display: none;
+}
+
+.hw-page .timeline-content {
+    line-height: 1.75;
+}
+
+.hw-page .timeline-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hw-page .timeline-detail {
+    font-size: 14px;
+}
+
+.hw-page .timeline-detail::before {
+    content: "-";
+    margin-right: 6px;
+}
+
+.hw-page .timeline-time {
+    font-size: 14px;
+    text-align: right;
+}
+
+/* ===== CV: embedded PDF ===== */
+.hw-page .pdf-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.hw-page .pdf-description {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hw-page .pdf-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 210 / 297;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hw-page .pdf-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== Publications ===== */
+/* Opt the publications h2 out of the blue marker */
+.hw-page .pub-section-title {
+    border-left: none;
+    padding-left: 0;
+}
+
+.hw-page .publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hw-page .publication-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 3px solid #0073e6;
+    padding-left: 16px;
+}
+
+.hw-page .pub-details {
+    max-width: 100%;
+    line-height: 1.7;
+}
+
+.hw-page .pub-date {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--custom-color);
+    font-weight: 600;
+}
+
+.hw-page .pub-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hw-page .pub-authors {
+    font-size: 14px;
+}
+
+.hw-page .pub-authors .me {
+    font-weight: 600;
+}
+
+.hw-page .pub-venue {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.hw-page .pub-links {
+    display: flex;
+    gap: 12px;
+}
+
+.hw-page .pub-links a {
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.hw-page .pub-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive: <= 768px ===== */
+@media (max-width: 768px) {
+    .hw-page h2 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+
+    .hw-page .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hw-page .profile-image {
+        max-width: 240px;
+    }
+
+    .hw-page .news-box {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .hw-page .news-item {
+        margin-left: 12px;
+    }
+
+    .hw-page .news-date {
+        width: 80px;
+    }
+
+    .hw-page .timeline-item {
+        margin-left: 24px;
+    }
+
+    .hw-page .timeline-icon {
+        display: none;
+    }
+
+    .hw-page .pdf-container {
+        gap: 16px;
+    }
+
+    .hw-page .pdf-description {
+        font-size: 20px;
+    }
+
+    .hw-page .publication-list {
+        gap: 16px;
+    }
+
+    .hw-page .publication-item {
+        border-left: 2px solid #0073e6;
+        padding-left: 12px;
+    }
+
+    .hw-page .pub-details {
+        line-height: 1.6;
+    }
+
+    .hw-page .pub-date {
+        width: 80px;
+    }
+}
