@@ -1,0 +1,407 @@
+---
+title: About
+---
+
+<style>
+
+.container.page article h2:first-of-type {
+    margin-top: 0 !important;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    border-left: 4px solid #0073e6;
+    padding-left: 12px;
+}
+
+a {
+    color: #0073e6;
+}
+
+.a-no-color {
+    color: inherit !important;
+    text-decoration: none;
+    transition: color 0.1s ease, text-decoration-color 0.1s ease;
+}
+
+.a-no-color:hover {
+    color: #0073e6 !important;
+    text-decoration: underline;
+    text-decoration-color: #0073e6;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.profile-text {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.profile-text p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.profile-links .a-no-color {
+    font-size: 22px;
+    transition: color 0.1s ease, transform 0.1s ease;
+}
+
+.profile-links .a-no-color:hover {
+    color: #0073e6;
+    transform: translateY(-1px);
+}
+
+.profile-image {
+    justify-self: center;
+    max-width: 280px;
+    width: 100%;
+}
+
+.profile-image img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.profile-image figcaption {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.colorscheme-light {
+  --custom-bg: snow;
+}
+.colorscheme-dark {
+  --custom-bg: #2d2d2d;
+}
+.news-box {
+    border: 1px solid rgba(0,0,0,0.08);
+    background:  var(--custom-bg);
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    display: flex;
+    margin-left: 32px;
+    font-size: 14px;
+}
+
+.news-date {
+    font-family: "Georgia", serif;
+    color: #0073e6;
+    letter-spacing: 0.4px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.news-text {
+    flex: 1;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #909090;
+    margin-left: 32px;
+}
+
+.timeline-left {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.timeline-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.timeline-icon.no-logo {
+    display: none;
+}
+
+.timeline-content {
+    line-height: 1.75;
+}
+
+.timeline-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline-detail {
+    font-size: 14px;
+}
+
+.timeline-detail::before {
+    content: "-";
+    margin-right: 6px;
+}
+
+.timeline-time {
+    font-size: 14px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .profile-image {
+        max-width: 240px;
+    }
+
+    .news-box {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .news-item {
+        margin-left: 12px;
+    }
+
+    .news-date {
+        width: 80px;
+    }
+
+    .timeline-item {
+        margin-left: 24px;
+    }
+
+    .timeline-icon {
+        display: none;
+    }
+}
+
+</style>
+
+
+<h2>About Me</h2>
+
+<div class="profile-grid">
+    <div class="profile-text">
+        <p>
+            I'm Huanyu Wang (王焕宇), a 4th-year undergraduate at Shanghai Jiao Tong University,
+            pursuing dual degrees in Computer Science and Applied Mathematics,
+            where I conduct research under Prof. <a href="https://hantek.github.io/" target="_blank">Zhouhan Lin</a>
+            at the <a href="https://github.com/LUMIA-Group" target="_blank">LUMIA Lab</a>.
+        </p>
+        <p>
+            I am also an incoming Ph.D. student at Carnegie Mellon University,
+            advised by Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a> at the
+            <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank">InfiniAI Lab</a>.
+            My research focuses on High Performance Computing and Machine Learning Systems.
+        </p>
+        <p>
+            Outside of academics, I enjoy basketball, Japanese anime, and traveling, and I also have a lovely cat!
+        </p>
+        <div class="profile-links">
+            <a href="https://github.com/whyisverysmart" target="_blank" class="a-no-color" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=oMHVyeAAAAAJ" target="_blank" class="a-no-color" aria-label="Google Scholar">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/huanyu-wang-15852839b" target="_blank" class="a-no-color" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:whyisverysmart@gmail.com" class="a-no-color" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <figure class="profile-image">
+        <img src="/assets/cat.jpg" alt="Cat">
+        <figcaption>Mao-na (猫娜)</figcaption>
+    </figure>
+</div>
+
+
+<div class="news-box">
+    <div class="news-list">
+        <div class="news-item">
+            <span class="news-date">2026.03</span>
+            <span class="news-text">
+                New preprint: <a href="https://arxiv.org/abs/2603.20661" target="_blank">WWW.Serve</a>, 
+                a decentralized and collaborative multi-LLM serving framework.
+            </span>
+        </div>
+        <div class="news-item">
+            <span class="news-date">2026.02</span>
+            <span class="news-text">
+                New preprint: <a href="https://arxiv.org/abs/2603.04411" target="_blank">DynaKV</a>, 
+                a token-wise adaptive KV cache compression method.
+            </span>
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025.08</span>
+            <span class="news-text">
+                New preprint: <a href="https://arxiv.org/abs/2508.06038" target="_blank">Fourier-VLM</a>, 
+                a frequency-domain VLM token compression approach.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+<h2>Education</h2>
+
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon">
+                <img src="/assets/CMU_logo.png" alt="CMU Logo">
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Carnegie Mellon University</div>
+                <div class="timeline-detail">Ph.D. in Electrical and Computer Engineering</div>
+            </div>
+        </div>
+        <div class="timeline-time">Starting from Fall 2026</div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon">
+                <img src="/assets/SJTU_logo.png" alt="SJTU Logo">
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Shanghai Jiao Tong University</div>
+                <div class="timeline-detail">B.S. in Computer Science and Technology (IEEE Honor Class)</div>
+                <div class="timeline-detail">B.S. in Mathematics and Applied Mathematics (Dual degree)</div>
+            </div>
+        </div>
+        <div class="timeline-time">Sept. 2022 - Jun. 2026 (Expected)</div>
+    </div>
+</div>
+
+
+
+<h2>Experiences</h2>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon">
+                <img src="/assets/InfiniAI_logo.png" alt="InfiniAI Logo">
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Research Intern, <a href="https://www.infini-ai-lab.cmu.edu/" target="_blank" class="a-no-color">InfiniAI Lab</a></div>
+                <div class="timeline-detail">Carnegie Mellon University</div>
+                <div class="timeline-detail">Advisor: Prof. <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank" class="a-no-color">Beidi Chen</a></div>
+                <div class="timeline-detail">Focus: LLM Serving Systems</div>
+            </div>
+        </div>
+        <div class="timeline-time">Mar. 2025 - Present</div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon">
+                <img src="/assets/LUMIA_logo.jpg" alt="LUMIA Logo">
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-title">Research Intern, <a href="https://github.com/LUMIA-Group" target="_blank" class="a-no-color">LUMIA Lab</a></div>
+                <div class="timeline-detail">Shanghai Jiao Tong University</div>
+                <div class="timeline-detail">Advisor: Prof. <a href="https://hantek.github.io/" target="_blank" class="a-no-color">Zhouhan Lin</a></div>
+                <div class="timeline-detail">Focus: Efficient VLMs</div>
+            </div>
+        </div>
+        <div class="timeline-time">Sept. 2024 - Present</div>
+    </div>
+
+    <!-- <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon no-logo"></div>
+            <div class="timeline-content">
+                <div class="timeline-title">Software Development Intern, Gauss Lab</div>
+                <div class="timeline-detail">Huawei Technologies Ltd., Shanghai</div>
+                <div class="timeline-detail">Focus: GaussDB Kernel</div>
+            </div>
+        </div>
+        <div class="timeline-time">Jul. 2024 - Sept. 2024</div>
+    </div> -->
+
+</div>
+
+
+
+<h2>Honors & Awards</h2>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon no-logo"></div>
+            <div class="timeline-content">
+                <div class="timeline-title">Zhi Yuan Honors Scholarship</div>
+            </div>
+        </div>
+        <div class="timeline-time">2023, 2024, 2025</div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-left">
+            <div class="timeline-icon no-logo"></div>
+            <div class="timeline-content">
+                <div class="timeline-title">Undergraduate Excellence Scholarship</div>
+            </div>
+        </div>
+        <div class="timeline-time">2022</div>
+    </div>
+
+</div>

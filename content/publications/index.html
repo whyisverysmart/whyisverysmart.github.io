@@ -1,0 +1,167 @@
+---
+title: Publications
+---
+
+<style>
+
+.container.page article h2:first-of-type {
+    margin-top: 0 !important;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publication-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 3px solid #0073e6;
+    padding-left: 16px;
+}
+
+.pub-details {
+    max-width: 100%;
+    line-height: 1.7;
+}
+
+.colorscheme-light {
+  --custom-color: #666;
+}
+.colorscheme-dark {
+  --custom-color: #bbb;
+}
+.pub-date {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--custom-color);
+    font-weight: 600;
+}
+
+.pub-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pub-authors {
+    font-size: 14px;
+}
+
+.pub-authors .me {
+    font-weight: 600;
+}
+
+.pub-venue {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.pub-links {
+    display: flex;
+    gap: 12px;
+}
+
+.pub-links a {
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .publication-list {
+        gap: 16px;
+    }
+
+    .publication-item {
+        border-left: 2px solid #0073e6;
+        padding-left: 12px;
+    }
+
+    .pub-details {
+        line-height: 1.6;
+    }
+
+    .pub-date {
+        width: 80px;
+    }
+}
+
+</style>
+
+<div class="publication-container">
+    <h2 class="pub-section-title">Selected Publications</h2>
+    <ul class="publication-list">
+        <li class="publication-item">
+            <div class="pub-details">
+                <span class="pub-title">WWW.Serve: Interconnecting Global LLM Services through Decentralization</span><br>
+                <span class="pub-authors"><span class="me">Huanyu Wang</span>, Ziyu Xia, Zhuoming Chen, Beidi Chen</span><br>
+                <!-- <span class="pub-venue">ICML 2026 Conference Submission</span> -->
+                <span class="pub-links">
+                    <a href="https://arxiv.org/abs/2603.20661" target="_blank">[Paper]</a>
+                    <a href="https://github.com/Infini-AI-Lab/WWW.Serve" target="_blank">[Code]</a>
+                    <a href="https://infini-ai-lab.github.io/WWW.Serve/" target="_blank">[Blog]</a>
+                </span>
+            </div>
+            <div class="pub-date">2026.03</div>
+        </li>
+        <li class="publication-item">
+            <div class="pub-details">
+                <span class="pub-title">Fourier-VLM: Compressing Vision Tokens in the Frequency Domain for Large Vision-Language Models</span><br>
+                <span class="pub-authors"><span class="me">Huanyu Wang</span>, Jushi Kai, Haoli Bai, Lu Hou, Bo Jiang, Ziwei He, Zhouhan Lin</span><br>
+                <span class="pub-links">
+                    <a href="https://arxiv.org/abs/2508.06038" target="_blank">[Paper]</a>
+                </span>
+            </div>
+            <div class="pub-date">2025.08</div>
+        </li>
+    </ul>
+    <h2 class="pub-section-title">Other Publications</h2>
+    <ul class="publication-list">
+        <li class="publication-item">
+            <div class="pub-details">
+                <span class="pub-title">One Size Does Not Fit All: Token-Wise Adaptive Compression for KV Cache</span><br>
+                <span class="pub-authors">Liming Lu, Kaixi Qiu, Jiayu Zhou, Jushi Kai, Haoyan Zhang, <span class="me">Huanyu Wang</span>, Jingwen Leng, Ziwei He, Zhouhan Lin</span><br>
+                <span class="pub-links">
+                    <a href="https://arxiv.org/abs/2603.04411" target="_blank">[Paper]</a>
+                </span>
+            </div>
+            <div class="pub-date">2026.02</div>
+        </li>
+        <li class="publication-item">
+            <div class="pub-details">
+                <span class="pub-title">LoMo: Longer and More Videos Benchmark for Understanding and Temporal Grounding Tasks</span><br>
+                <span class="pub-authors">Chengyang Hu, Xinyu Zhou, <span class="me">Huanyu Wang</span>, Danyu Shen, Ran Yi, Mengtian Li, Lizhuang Ma</span><br>
+                <span class="pub-links">
+                    <!-- <a href="..." target="_blank">[Paper]</a> -->
+                    <!-- <a href="..." target="_blank">[Code]</a> -->
+                    <a href="https://huggingface.co/datasets/ryohu053/LoMo_Video_Benchmark" target="_blank">[Dataset]</a>
+                </span>
+            </div>
+            <div class="pub-date">2025.05</div>
+        </li>
+    </ul>
+</div>
