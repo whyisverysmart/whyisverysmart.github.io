@@ -3,18 +3,96 @@
    exceptions are the two colorscheme blocks: those classes live on <body>
    and must stay at the top level so the CSS variables can cascade. */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
+
 /* ===== Color-scheme variables (must stay at body level) ===== */
 .colorscheme-light {
     --custom-bg: snow;
     --custom-color: #666;
+    --accent: #C41230;
+    --rule: rgba(0, 0, 0, 0.12);
+    --news-bg: rgba(0, 0, 0, 0.03);
 }
 
 .colorscheme-dark {
     --custom-bg: #2d2d2d;
     --custom-color: #bbb;
+    --accent: #C41230;
+    --rule: rgba(255, 255, 255, 0.15);
+    --news-bg: rgba(255, 255, 255, 0.04);
+}
+
+/* ===== Theme-wide overrides =====
+   These rules are NOT scoped to .hw-page. They retint the blue parts of the
+   hugo-coder theme (home landing page, top nav bar) to our accent color. */
+
+/* Global link color: replaces theme's blue ($link-color) */
+a {
+    color: var(--accent);
+}
+
+/* Footer links: theme sets these via `.footer a` (light) and
+   `body.colorscheme-dark/auto .footer a` (dark) with specificity high enough
+   to beat the global `a` rule above. Match its (0,2,2) specificity to win
+   the cascade across all three color schemes. */
+body.colorscheme-light .footer a,
+body.colorscheme-dark .footer a,
+body.colorscheme-auto .footer a {
+    color: var(--accent);
+}
+
+/* Underline behavior: theme writes `a:focus, a:hover { underline }`, which
+   causes the underline to stay after a mouse click (the link keeps :focus).
+   Suppress :focus underline for mouse clicks; keep underline on :hover and
+   keyboard :focus-visible. Later rules in source order win same-specificity
+   conflicts, so :hover/:focus-visible still apply when both states are active. */
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Top nav bar: replace theme blue with accent.
+   :hover and keyboard :focus-visible both highlight; plain :focus
+   (left over after a mouse click) resets to default so the link
+   doesn't stay red after the user clicks it. */
+.navigation a:focus,
+.navigation i:focus {
+    color: inherit;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible,
+.navigation i:hover,
+.navigation i:focus-visible {
+    color: var(--accent);
+}
+
+/* Home landing page: social icons, same logic + hover lift */
+.centered .about ul li a {
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.centered .about ul li a:focus {
+    color: inherit;
+    transform: none;
+}
+
+.centered .about ul li a:hover,
+.centered .about ul li a:focus-visible {
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 
 /* ===== Typography ===== */
+.hw-page {
+    font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+    font-feature-settings: "kern", "liga";
+}
+
 .hw-page h2:first-of-type {
     margin-top: 0 !important;
 }
@@ -24,12 +102,12 @@
     margin-bottom: 16px;
     font-size: 20px;
     font-weight: 600;
-    border-left: 4px solid #0073e6;
+    border-left: 2px solid var(--accent);
     padding-left: 12px;
 }
 
 .hw-page a {
-    color: #0073e6;
+    color: var(--accent);
 }
 
 .hw-page .a-no-color {
@@ -38,10 +116,11 @@
     transition: color 0.1s ease, text-decoration-color 0.1s ease;
 }
 
-.hw-page .a-no-color:hover {
-    color: #0073e6 !important;
+.hw-page .a-no-color:hover,
+.hw-page .a-no-color:focus-visible {
+    color: var(--accent) !important;
     text-decoration: underline;
-    text-decoration-color: #0073e6;
+    text-decoration-color: var(--accent);
 }
 
 /* ===== About: profile ===== */
@@ -53,14 +132,13 @@
 }
 
 .hw-page .profile-text {
-    font-family: "Georgia", "Times New Roman", serif;
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .hw-page .profile-text p {
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .hw-page .profile-links {
@@ -75,8 +153,9 @@
     transition: color 0.1s ease, transform 0.1s ease;
 }
 
-.hw-page .profile-links .a-no-color:hover {
-    color: #0073e6;
+.hw-page .profile-links .a-no-color:hover,
+.hw-page .profile-links .a-no-color:focus-visible {
+    color: var(--accent);
     transform: translateY(-1px);
 }
 
@@ -92,46 +171,46 @@
 }
 
 .hw-page .profile-image figcaption {
-    font-family: "Georgia", "Times New Roman", serif;
     font-size: 14px;
     text-align: center;
+    color: var(--custom-color);
+    margin-top: 6px;
 }
 
-/* ===== About: news box ===== */
+/* ===== About: news ===== */
 .hw-page .news-box {
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    background: var(--custom-bg);
-    padding: 16px;
-    margin-top: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    background: var(--news-bg);
+    padding: 14px 18px;
+    margin-top: 4px;
+    border-radius: 4px;
 }
 
 .hw-page .news-list {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .hw-page .news-item {
     display: flex;
-    margin-left: 32px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 .hw-page .news-date {
-    font-family: "Georgia", serif;
-    color: #0073e6;
-    letter-spacing: 0.4px;
+    color: var(--accent);
+    letter-spacing: 0.3px;
     width: 100px;
     font-size: 14px;
     font-weight: 600;
+    font-variant-numeric: tabular-nums;
 }
 
 .hw-page .news-text {
     flex: 1;
 }
 
-/* ===== About: timeline (education / experiences / honors) ===== */
+/* ===== About: timeline (education) ===== */
 .hw-page .timeline {
     display: flex;
     flex-direction: column;
@@ -143,7 +222,7 @@
     grid-template-columns: 2fr 1fr;
     align-items: start;
     padding-bottom: 12px;
-    border-bottom: 1px solid #909090;
+    border-bottom: 1px solid var(--rule);
     margin-left: 32px;
 }
 
@@ -193,6 +272,8 @@
 .hw-page .timeline-time {
     font-size: 14px;
     text-align: right;
+    color: var(--custom-color);
+    font-variant-numeric: tabular-nums;
 }
 
 /* ===== CV: embedded PDF ===== */
@@ -230,7 +311,9 @@
 }
 
 /* ===== Publications ===== */
-/* Opt the publications h2 out of the blue marker */
+/* Opt the publications page's own h2 out of the accent marker
+   (About's "Selected Publications" h2 keeps the marker for consistency
+   with other About sections). */
 .hw-page .pub-section-title {
     border-left: none;
     padding-left: 0;
@@ -246,26 +329,42 @@
 }
 
 .hw-page .publication-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-left: 3px solid #0073e6;
-    padding-left: 16px;
+    display: grid;
+    grid-template-columns: 260px 1fr 90px;
+    grid-template-areas: "teaser details date";
+    gap: 20px;
+    align-items: start;
+}
+
+.hw-page .pub-teaser {
+    grid-area: teaser;
+    margin: 0;
+    aspect-ratio: 2 / 1;
+    border-radius: 4px;
+    overflow: hidden;
+    align-self: center;
+}
+
+.hw-page .pub-teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .hw-page .pub-details {
-    max-width: 100%;
+    grid-area: details;
+    min-width: 0;
     line-height: 1.7;
 }
 
 .hw-page .pub-date {
-    flex-shrink: 0;
-    width: 100px;
-    text-align: center;
+    grid-area: date;
+    text-align: right;
     font-size: 15px;
     color: var(--custom-color);
     font-weight: 600;
+    font-variant-numeric: tabular-nums;
 }
 
 .hw-page .pub-title {
@@ -284,6 +383,7 @@
 .hw-page .pub-venue {
     font-style: italic;
     font-size: 14px;
+    color: var(--custom-color);
 }
 
 .hw-page .pub-links {
@@ -293,11 +393,26 @@
 
 .hw-page .pub-links a {
     font-size: 14px;
-    color: #0073e6;
+    color: var(--accent);
     text-decoration: none;
 }
 
 .hw-page .pub-links a:hover {
+    text-decoration: underline;
+}
+
+/* "See full publication list →" link below About's selected pubs */
+.hw-page .see-all-pubs {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.hw-page .see-all-pubs a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hw-page .see-all-pubs a:hover {
     text-decoration: underline;
 }
 
@@ -319,12 +434,7 @@
     }
 
     .hw-page .news-box {
-        padding: 12px;
-        margin-top: 12px;
-    }
-
-    .hw-page .news-item {
-        margin-left: 12px;
+        padding: 12px 14px;
     }
 
     .hw-page .news-date {
@@ -352,8 +462,11 @@
     }
 
     .hw-page .publication-item {
-        border-left: 2px solid #0073e6;
-        padding-left: 12px;
+        grid-template-columns: 130px 1fr;
+        grid-template-areas:
+            "teaser details"
+            "teaser date";
+        gap: 4px 14px;
     }
 
     .hw-page .pub-details {
@@ -361,6 +474,26 @@
     }
 
     .hw-page .pub-date {
-        width: 80px;
+        text-align: left;
+        font-size: 13px;
+        margin-top: 2px;
+    }
+}
+
+/* ===== Responsive: <= 480px (phone portrait) ===== */
+@media (max-width: 480px) {
+    .hw-page .publication-item {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "details date";
+        gap: 0 12px;
+    }
+
+    .hw-page .pub-teaser {
+        display: none;
+    }
+
+    .hw-page .pub-date {
+        text-align: right;
+        margin-top: 0;
     }
 }

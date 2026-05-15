@@ -34,8 +34,8 @@ avatarURL = "/assets/avatar.jpg"
 faviconSVG = "/assets/favicon.svg"
 since = 2025
 rtl = false
-colorScheme = "auto"
-hideColorSchemeToggle = false
+colorScheme = "light"
+hideColorSchemeToggle = true
 maxSeeAlsoItems = 5
 customCSS = ["css/custom.css"]
 customSCSS = []
@@ -137,18 +137,24 @@ name = "Github"
 icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/whyisverysmart"
+target = "_blank"
+rel = "noopener noreferrer"
 
 [[params.social]]
 name = "Google Scholar"
 icon = "fa-solid fa-graduation-cap fa-2x"
 weight = 2
 url = "https://scholar.google.com/citations?user=oMHVyeAAAAAJ"
+target = "_blank"
+rel = "noopener noreferrer"
 
 [[params.social]]
 name  = "LinkedIn"
 icon  = "fa-brands fa-linkedin fa-2x"
 weight = 3
 url   = "https://www.linkedin.com/in/huanyu-wang-15852839b"
+target = "_blank"
+rel = "noopener noreferrer"
 
 [[params.social]]
 name = "Email"
