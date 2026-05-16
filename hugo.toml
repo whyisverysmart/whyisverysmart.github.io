@@ -24,9 +24,9 @@ unsafe = true
 [params]
 author = "Huanyu Wang"
 info = [
-    "Undergrad @ SJTU",
+    "4th-year Undergrad @ SJTU",
     "Incoming Ph.D. Student @ CMU",
-    "HPC & ML Systems",
+    "ML Systems & HPC",
 ]
 description = "Huanyu Wang's Personal Homepage"
 keywords = "personal,academic"
@@ -157,9 +157,17 @@ target = "_blank"
 rel = "noopener noreferrer"
 
 [[params.social]]
+name = "X"
+icon = "fa-brands fa-x-twitter fa-2x"
+weight = 4
+url = "https://x.com/whyisverysmart"
+target = "_blank"
+rel = "noopener noreferrer"
+
+[[params.social]]
 name = "Email"
 icon = "fa-solid fa-envelope fa-2x"
-weight = 4
+weight = 5
 url = "mailto:whyisverysmart@gmail.com"
 
 
