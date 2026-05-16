@@ -115,6 +115,13 @@ p {
     color: var(--custom-color, #777);
 }
 
+.footer .last-updated {
+    display: block;
+    margin-top: 4px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
 /* ===== Theme-wide overrides =====
    These rules are NOT scoped to .hw-page. They retint the blue parts of the
    hugo-coder theme (home landing page, top nav bar) to our accent color. */
@@ -164,10 +171,9 @@ a:focus-visible {
     color: var(--accent);
 }
 
-/* Home landing page: social icons. Theme uses fa-2x (32px) — scale down.
-   With 5 icons, also pull horizontal margin in so the group reads as a unit. */
+/* Home landing page: social icons. Theme uses fa-2x (32px) — scale down. */
 .centered .about ul li .fa-2x {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 .centered .about ul {
@@ -175,8 +181,8 @@ a:focus-visible {
 }
 
 .centered .about ul li a {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
     transition: color 0.15s ease, transform 0.15s ease;
 }
 
